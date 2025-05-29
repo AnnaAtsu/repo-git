@@ -1,22 +1,30 @@
 package org.example;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-import static SetUp.SetUp.driver;
+import java.time.Duration;
+
+import static org.example.SetUp.driver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LoginPage extends SetUp.SetUp {
+public class LoginPage extends TestBase{
 
-    @Test
+  @Test
     void LoginUser() {
-      driver.findElement(By.id("login")).click();
-      driver.findElement(By.id("login")).sendKeys("Anna");
-      driver.findElement(By.name("password")).click();
-        driver.findElement(By.name("password")).sendKeys("password");
+   System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
+   WebDriver driver = new ChromeDriver();
+     driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+      driver.findElement(By.name("username")).click();
+      driver.findElement(By.name("username")).sendKeys("Admin");
+      driver.findElement(By.xpath("//input[@type='password']")).click();
+      driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
       driver.findElement(By.tagName("button")).submit();
       String title = driver.getTitle();
-      AssertJUnit.assertEquals("Login", title);
+     AssertJUnit.assertEquals("OrangeHRM", title);
 
     }
 
