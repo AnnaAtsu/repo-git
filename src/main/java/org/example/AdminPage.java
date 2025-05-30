@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,8 +14,9 @@ import static org.example.SetUp.driver;
 
 public class AdminPage {
 
-
+   @Test
     void AdminGotoSystemUsers() {
+
 
         System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -28,14 +30,15 @@ public class AdminPage {
         String title = driver.getTitle();
         AssertJUnit.assertEquals("OrangeHRM", title);
         // новый сценарий
-        driver.findElement(By.className("oxd-main-menu-item active")).click();
-        driver.findElement(By.className("oxd-main-menu-item active")).sendKeys("Admin");
+        driver.findElement(By.className("oxd-main-menu-item")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.findElement(By.cssSelector("div[data-v-957b4417] input.oxd-input.oxd-input--active")).click();
+        driver.findElement(By.cssSelector("div[data-v-957b4417] input.oxd-input.oxd-input--active")).sendKeys("Admin");
         driver.findElement(By.className("oxd-select-text-input")).click();
         //написать селектор
-
         driver.findElement(By.className("orangehrm-left-space")).submit();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        driver.findElement(By.xpath("//i[contains(text(), ' Add '")).click();
+        driver.findElement(By.xpath("//[contains(text(), ' Add '")).click();
 
     }
 

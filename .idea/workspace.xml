@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит12">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SetUp/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SetUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
     </list>
@@ -52,11 +47,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
     "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.LoginPage.LoginUser.executor": "Run",
+    "TestNG.LoginPage.LoginUser.executor": "Debug",
     "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
     "TestNG.Openbrowser.executor": "Run",
     "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
@@ -66,8 +62,8 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginPage.LoginUser">
-    <configuration name="LoginPage.testOpenGooglePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdminPage.AdminGotoSystemUsers">
+    <configuration name="AdminPage.AdminGotoSystemUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -76,8 +72,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
-      <option name="METHOD_NAME" value="testOpenGooglePage" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AdminPage" />
+      <option name="METHOD_NAME" value="AdminGotoSystemUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminPage.AdminGotoSystemUsers" />
         <item itemvalue="TestNG.LoginPage.LoginUser" />
         <item itemvalue="TestNG.Openbrowser.testOpenGooglePage" />
         <item itemvalue="TestNG.Openbrowser" />
         <item itemvalue="TestNG.LoginPage.testOpenGooglePage" />
-        <item itemvalue="JUnit.LoginPage.testOpenGooglePage" />
       </list>
     </recent_temporary>
   </component>
@@ -189,25 +185,43 @@
       <option name="project" value="LOCAL" />
       <updated>1748355833394</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="коммит123">
+      <option name="closed" value="true" />
+      <created>1748529696115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748529696115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="коммит1" />
     <MESSAGE value="коммит12" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит12" />
+    <MESSAGE value="коммит123" />
+    <option name="LAST_COMMIT_MESSAGE" value="коммит123" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/LoginPage.java</url>
-          <line>15</line>
+          <line>16</line>
           <properties class="org.example.LoginPage" method="LoginUser">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/AdminPage.java</url>
+          <line>17</line>
+          <properties class="org.example.AdminPage" method="AdminGotoSystemUsers">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

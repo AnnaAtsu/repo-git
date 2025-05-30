@@ -9,6 +9,7 @@ import java.time.Duration;
 
 import static org.example.SetUp.driver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginPage extends TestBase{
 
@@ -25,6 +26,8 @@ public class LoginPage extends TestBase{
       driver.findElement(By.tagName("button")).submit();
       String title = driver.getTitle();
      AssertJUnit.assertEquals("OrangeHRM", title);
+     String userName = String.valueOf(driver.findElement(By.className("oxd-userdropdown-name")));
+     assertTrue(true, userName);
 
     }
 
