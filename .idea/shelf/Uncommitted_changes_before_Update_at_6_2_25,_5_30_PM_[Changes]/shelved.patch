@@ -1,0 +1,33 @@
+Index: src/main/java/SetUp/SetUp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package SetUp;\nimport org.junit.jupiter.api.AfterEach;\nimport org.junit.jupiter.api.BeforeEach;\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.firefox.FirefoxDriver;\nimport org.openqa.selenium.firefox.FirefoxOptions;\nimport org.testng.annotations.Test;\n\nimport java.time.Duration;\nimport java.util.concurrent.TimeUnit;\n\nimport static org.testng.AssertJUnit.assertEquals;\n\n\npublic class SetUp {\n    public static WebDriver driver;\n    @BeforeEach\n    void setup() {\n        System.setProperty(\"webdriver.gecko.driver\", \"/home/user/idee/geckodriver\");\n        FirefoxOptions options = new FirefoxOptions();\n        WebDriver driver = new FirefoxDriver(options);\n        //создание экземпляра драйвера\n        driver.manage().window().maximize();\n        //окно разворачивается на полный экран\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));\n    }\n\n    @Test\n    void testOpenGooglePage() {\n        driver.get(\"https://www.google.com/\");\n        String title = driver.getTitle();\n        assertEquals(\"Google\", title);\n    }\n    @AfterEach\n    void tearDown() {\n        if (driver != null) {\n            driver.quit();\n        }\n    }\n\n}\n
+===================================================================
+diff --git a/src/main/java/SetUp/SetUp.java b/src/main/java/SetUp/SetUp.java
+--- a/src/main/java/SetUp/SetUp.java	
++++ b/src/main/java/SetUp/SetUp.java	
+@@ -2,6 +2,8 @@
+ import org.junit.jupiter.api.AfterEach;
+ import org.junit.jupiter.api.BeforeEach;
+ import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.chrome.ChromeDriver;
++import org.openqa.selenium.chrome.ChromeOptions;
+ import org.openqa.selenium.firefox.FirefoxDriver;
+ import org.openqa.selenium.firefox.FirefoxOptions;
+ import org.testng.annotations.Test;
+@@ -15,10 +17,11 @@
+ public class SetUp {
+     public static WebDriver driver;
+     @BeforeEach
+-    void setup() {
+-        System.setProperty("webdriver.gecko.driver", "/home/user/idee/geckodriver");
+-        FirefoxOptions options = new FirefoxOptions();
+-        WebDriver driver = new FirefoxDriver(options);
++    public static void setup() {
++        System.setProperty("webdriver.chrome.driver", "home/user/idee/chromedriver.exe");
++        driver = new ChromeDriver();
++        // FirefoxOptions options = new FirefoxOptions();
++        //WebDriver driver = new FirefoxDriver(options);
+         //создание экземпляра драйвера
+         driver.manage().window().maximize();
+         //окно разворачивается на полный экран
