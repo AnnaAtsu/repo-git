@@ -13,6 +13,11 @@
       <artifactId>selenium-java</artifactId>
       <version>4.27.0</version>
     </dependency>
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.7.0</version> <!-- актуальная на 2025 год -->
+    </dependency>
         <!-- JUnit Jupiter API и Engine -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>

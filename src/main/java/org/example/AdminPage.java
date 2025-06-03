@@ -1,5 +1,6 @@
 package org.example;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,14 +13,17 @@ import java.time.Duration;
 
 import static org.example.SetUp.driver;
 
-public class AdminPage {
+public class AdminPage extends TestBase{
 
    @Test
     void AdminGotoSystemUsers() {
 
 
-        System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+       WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
+       WebDriver driver = new ChromeDriver();
+       // System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
+        //WebDriver driver = new ChromeDriver();
+       driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         driver.findElement(By.name("username")).click();
@@ -32,13 +36,18 @@ public class AdminPage {
         // новый сценарий
         driver.findElement(By.className("oxd-main-menu-item")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        driver.findElement(By.cssSelector("div[data-v-957b4417] input.oxd-input.oxd-input--active")).click();
-        driver.findElement(By.cssSelector("div[data-v-957b4417] input.oxd-input.oxd-input--active")).sendKeys("Admin");
-        driver.findElement(By.className("oxd-select-text-input")).click();
-        //написать селектор
-        driver.findElement(By.className("orangehrm-left-space")).submit();
+       // вариант
+       driver.findElement(By.xpath("//div[2]/input")).click();
+       driver.findElement(By.xpath("//div[2]/input")).sendKeys("Admin");
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+       driver.findElement(By.xpath("//button[contains(.,'Search')]")).click();
+
+
+
+        driver.findElement(By.xpath("//div[2]/i")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        driver.findElement(By.xpath("//[contains(text(), ' Add '")).click();
+        String userDropDown = driver.getCurrentUrl();
+        AssertJUnit.assertEquals(userDropDown, "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
 
     }
 
