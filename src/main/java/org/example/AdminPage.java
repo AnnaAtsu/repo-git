@@ -43,7 +43,6 @@ public class AdminPage extends TestBase{
        driver.findElement(By.xpath("//button[contains(.,'Search')]")).click();
 
 
-
         driver.findElement(By.xpath("//div[2]/i")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         String userDropDown = driver.getCurrentUrl();
