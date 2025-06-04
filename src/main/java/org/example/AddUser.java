@@ -6,9 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 
 public class AddUser {
@@ -26,13 +29,14 @@ public class AddUser {
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
         driver.findElement(By.tagName("button")).submit();
         driver.findElement(By.className("oxd-main-menu-item")).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.findElement(By.xpath("//button[contains(@class, 'oxd-button') and contains(., 'Add')]")).click();
         //выбрать user role
 
         driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text--after')]//i[contains(@class, 'oxd-icon')]")).click();
-        List<WebElement> options = driver.findElements(By.xpath("//div[contains(@class, 'oxd-select-text-input') and contains(., 'Admin')]"));
-        options.get(0).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text-input') and contains(., 'Admin')]")).click();
+
       // driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text-input') and (text())='Admin']")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         //выбрать status
@@ -42,8 +46,10 @@ public class AddUser {
         driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).sendKeys("John Smith");
         //указать юзернейм
+        Random rnd = new Random();
+        String newUser = "user" +  rnd.nextInt(500);
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input")).click();
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input")).sendKeys("Anna12");
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[4]/div/div[2]/input")).sendKeys(newUser);
         //указать пароль
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.findElement(By.xpath("//input[@type='password']")).click();
