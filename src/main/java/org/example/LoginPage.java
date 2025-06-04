@@ -42,6 +42,8 @@ public class LoginPage {
         driver.findElement(By.tagName("button")).submit();
         String title = driver.getTitle();
         AssertJUnit.assertEquals("OrangeHRM", title);
+        String adminName = driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
+        AssertJUnit.assertEquals(adminName, "Dashboard");
 
     }
 

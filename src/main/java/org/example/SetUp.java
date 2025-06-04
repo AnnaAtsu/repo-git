@@ -20,6 +20,7 @@ public class SetUp {
 
     }
     @BeforeAll
+
     public static void setup() {
       System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
       WebDriver driver = new ChromeDriver();
