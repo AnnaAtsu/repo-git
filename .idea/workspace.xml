@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным Adduser">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным singleton">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SetUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,9 @@
   "keyToString": {
     "JUnit.AddUser.addNewUser.executor": "Debug",
     "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
     "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
+    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -53,7 +54,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AddUser.addNewUser">
+  <component name="RunManager" selected="JUnit.AdminSearchTest.testSuccessfullSearch">
     <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -86,6 +87,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AdminSearchTest.testSuccessfullSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.AdminSearchTest" />
+      <option name="METHOD_NAME" value="testSuccessfullSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testSuccessfulLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
+      <option name="METHOD_NAME" value="testSuccessfulLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginPage.LoginUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -104,49 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPage.testOpenGooglePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
-      <option name="METHOD_NAME" value="testOpenGooglePage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Openbrowser.testOpenGooglePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Openbrowser" />
-      <option name="METHOD_NAME" value="testOpenGooglePage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminSearchTest.testSuccessfullSearch" />
+        <item itemvalue="JUnit.LoginTest.testSuccessfulLogin" />
         <item itemvalue="JUnit.AddUser.addNewUser" />
         <item itemvalue="JUnit.AdminPage.AdminGotoSystemUsers" />
         <item itemvalue="TestNG.LoginPage.LoginUser" />
-        <item itemvalue="TestNG.Openbrowser.testOpenGooglePage" />
-        <item itemvalue="TestNG.LoginPage.testOpenGooglePage" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749109584744</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="коммит с законченным singleton">
+      <option name="closed" value="true" />
+      <created>1749111231217</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749111231217</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,7 +237,8 @@
     <MESSAGE value="модификация adduser" />
     <MESSAGE value="модификация adduser2" />
     <MESSAGE value="коммит с законченным Adduser" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит с законченным Adduser" />
+    <MESSAGE value="коммит с законченным singleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="коммит с законченным singleton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
