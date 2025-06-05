@@ -23,6 +23,6 @@ public class TestBase {
     void clickAddButton() {
         WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
         WebDriver driver = new ChromeDriver();
-        driver.findElement(By.cssSelector("oxd-button--secondary:nth-child(1)")).click();
+        driver.findElement(By.xpath("//button[contains(@class, 'oxd-button') and contains(., 'Add')]")).click();
     }
 }

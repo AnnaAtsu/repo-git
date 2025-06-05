@@ -36,7 +36,13 @@ public class AdminPage extends TestBase{
         // новый сценарий
         driver.findElement(By.className("oxd-main-menu-item")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-       // вариант
+       //выбрать user role
+
+       driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text--after')]//i[contains(@class, 'oxd-icon')]")).click();
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+       driver.findElement(By.xpath("//div[@role='option' and contains(@class, 'oxd-select-option')][.//span[text()='Admin']]")).click();
+
+       // ввести username
        driver.findElement(By.xpath("//div[2]/input")).click();
        driver.findElement(By.xpath("//div[2]/input")).sendKeys("Admin");
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
