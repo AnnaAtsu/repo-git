@@ -17,12 +17,15 @@ import java.util.Random;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class AddUser {
+public class AddUser extends TestBase{
+    WebDriver driver;
+
 
     @Test
     void addNewUser() {
-        WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
-        WebDriver driver = new ChromeDriver();
+       // WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
+       // WebDriver driver = new ChromeDriver();
+        driver = SetUp.getDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
@@ -46,7 +49,7 @@ public class AddUser {
 
         //выбрать employee name
         driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).click();
-        driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).sendKeys("John ");
+        driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).sendKeys("Taqi ");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]/div/div[2]/div[1]/span")).click();
         //указать юзернейм
@@ -68,6 +71,7 @@ public class AddUser {
         assertEquals(MainPageUrl,"https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
         String xpath = "//div[@class='oxd-table-cell oxd-padding-cell' and @role='cell']//div[text()='" + newUser + "']";
         WebElement userElement = driver.findElement(By.xpath(xpath));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         // Получить текст
         String LastAddedUser = userElement.getText();
         assertEquals(LastAddedUser, newUser);

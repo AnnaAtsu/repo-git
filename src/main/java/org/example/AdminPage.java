@@ -11,18 +11,22 @@ import org.testng.AssertJUnit;
 
 import java.time.Duration;
 
-import static org.example.SetUp.driver;
+//import static org.example.SetUp.driver;
 
 public class AdminPage extends TestBase{
+    WebDriver driver;
+
+
 
    @Test
     void AdminGotoSystemUsers() {
 
 
-       WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
-       WebDriver driver = new ChromeDriver();
+       //WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
+      // WebDriver driver = new ChromeDriver();
        // System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
+       driver = SetUp.getDriver();
        driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));

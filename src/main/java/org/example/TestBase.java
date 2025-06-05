@@ -1,18 +1,32 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-import static org.example.SetUp.driver;
+
 
 public class TestBase {
 
 
-    void openMainPage() {
+    WebDriver driver;
+
+    @BeforeEach
+    public void setup() {
+        driver = SetUp.getDriver();
+    }
+
+    @AfterAll
+    public static void tearDownAll() {
+        SetUp.quitDriver();
+    }
+
+        void openMainPage() {
         System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

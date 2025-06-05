@@ -13,15 +13,19 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LoginPage {
+public class LoginPage extends TestBase{
+    WebDriver driver;
+
 
     @Test
     void LoginUser() {
+
         //чтобы не указывать путь до драйвера напрямую
-        WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
-        WebDriver driver = new ChromeDriver();
-       // System.setProperty("webdriver.chrome.driver", "C:/Users/takan/IdeaProjects/chromedriver-win64/chromedriver.exe");
+       // WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
         //WebDriver driver = new ChromeDriver();
+
+        //WebDriver driver = new ChromeDriver();
+        driver = SetUp.getDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
