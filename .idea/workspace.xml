@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UserRowElement.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным Page element - найти самостоятельно где применить">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/UserGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/UserVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AnnaAtsu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AnnaAtsu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AnnaAtsu/repo-git.git",
-    "accountId": "d47bf71c-16d9-4a93-8ab7-f7dd3430d6e4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AnnaAtsu/repo-git.git&quot;,
+    &quot;accountId&quot;: &quot;d47bf71c-16d9-4a93-8ab7-f7dd3430d6e4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -49,6 +50,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.AddUser.addNewUser.executor": "Debug",
+    "JUnit.AddUser.addNewUser1.executor": "Debug",
+    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
     "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
@@ -65,8 +68,8 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AdminSearchTest.testAdminGotoSystemUsers">
-    <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AddUser.addNewUser1">
+    <configuration name="AddUser.addNewUser1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -76,13 +79,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.AddUser" />
-      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="METHOD_NAME" value="addNewUser1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminPage.AdminGotoSystemUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddUser.testCreateRandomUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +94,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AdminPage" />
-      <option name="METHOD_NAME" value="AdminGotoSystemUsers" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AddUser" />
+      <option name="METHOD_NAME" value="testCreateRandomUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddUser.addNewUser1" />
+        <item itemvalue="JUnit.AddUser.testCreateRandomUser" />
         <item itemvalue="JUnit.AdminSearchTest.testAdminGotoSystemUsers" />
         <item itemvalue="JUnit.AdminSearchTest.testSuccessfullSearch" />
         <item itemvalue="JUnit.LoginTest.testSuccessfulLogin" />
-        <item itemvalue="JUnit.AddUser.addNewUser" />
-        <item itemvalue="JUnit.AdminPage.AdminGotoSystemUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749198378369</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="коммит с законченным Page element - найти самостоятельно где применить">
+      <option name="closed" value="true" />
+      <created>1749208619953</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749208619953</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -258,25 +269,31 @@
     <MESSAGE value="коммит с законченным singleton" />
     <MESSAGE value="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц," />
     <MESSAGE value="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin" />
+    <MESSAGE value="коммит с законченным Page element - найти самостоятельно где применить" />
+    <option name="LAST_COMMIT_MESSAGE" value="коммит с законченным Page element - найти самостоятельно где применить" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java</url>
           <line>48</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,8 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.example.generator.UserGenerator;
+import org.example.generator.UserVO;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -9,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 import java.util.List;
@@ -77,4 +80,55 @@ public class AddUser extends TestBase{
         assertEquals(LastAddedUser, newUser);
 
     }
+    // Для шаблона Value Object
+    @Test
+    public void addNewUserWithRandomData() {
+        driver = SetUp.getDriver();
+        driver.manage().window().maximize();
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+
+        // Login
+        driver.findElement(By.name("username")).sendKeys("Admin");
+        driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
+        driver.findElement(By.tagName("button")).submit();
+
+        // Навигация
+        driver.findElement(By.className("oxd-main-menu-item")).click();
+        driver.findElement(By.xpath("//button[contains(@class, 'oxd-button') and contains(., 'Add')]")).click();
+
+        // Создание VO
+        UserVO newUser = UserGenerator.generate();
+
+        // Выбор роли
+        driver.findElement(By.xpath("//div[contains(@class, 'oxd-select-text--after')]//i")).click();
+        driver.findElement(By.xpath("//div[@role='option']//span[text()='" + newUser.getRole() + "']")).click();
+
+        // Выбор статуса
+        driver.findElement(By.xpath("(//div[contains(@class,'oxd-select-text--after')]//i)[2]")).click();
+        driver.findElement(By.xpath("//div[@role='option']//span[text()='" + newUser.getStatus() + "']")).click();
+
+        // Employee name
+        driver.findElement(By.xpath("//input[@placeholder='Type for hints...']")).sendKeys(newUser.getEmployeeName());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.findElement(By.xpath("//span[contains(text(),'" + newUser.getEmployeeName() + "')]")).click();
+
+        // Username
+        driver.findElement(By.xpath("//label[text()='Username']/../following-sibling::div/input")).sendKeys(newUser.getUsername());
+
+        // Пароль и подтверждение
+        driver.findElement(By.xpath("//label[text()='Password']/../following-sibling::div/input")).sendKeys(newUser.getPassword());
+        driver.findElement(By.xpath("//label[text()='Confirm Password']/../following-sibling::div/input")).sendKeys(newUser.getPassword());
+
+        // Сохранить
+        driver.findElement(By.cssSelector("button.oxd-button.oxd-button--secondary.orangehrm-left-space")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+
+
+        String xpath = "//div[@class='oxd-table-cell oxd-padding-cell' and @role='cell']//div[text()='" + newUser.getUsername() + "']";
+        WebElement userElement = driver.findElement(By.xpath(xpath));
+        assertEquals(userElement.getText(), newUser.getUsername());
+
+    }
+
 }
