@@ -8,13 +8,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 
 import java.time.Duration;
 
 public class AdminSearchTest {
     WebDriver driver;
-    AdminPageObject adminpage;
+    AdminPageObject adminPage;
+    LoginPageObject loginPage;
 
 
     @BeforeEach
@@ -23,19 +26,29 @@ public class AdminSearchTest {
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-        adminpage = new AdminPageObject(driver);
+
     }
 
-        @Test
-        public void testSuccessfullSearch() {
-            adminpage.LoginAndSearchForAdmin("Admin", "admin123");
-            String title = driver.getTitle();
-            AssertJUnit.assertEquals("OrangeHRM", title);
+    @Test
+    public void testAdminGotoSystemUsers() {
+        loginPage = new LoginPageObject(driver);
+        loginPage.loginAs("Admin", "admin123");
 
-            String userDropDown = driver.getCurrentUrl();
-            AssertJUnit.assertEquals(userDropDown, "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
+        Assert.assertEquals(driver.getTitle(), "OrangeHRM");
 
-        }
+        adminPage = new AdminPageObject(driver);
+        adminPage.navigateToUserSearch();
+        adminPage.filterByRoleAndUsername("Admin", "Admin");
+        adminPage.openUserDropdown();
+
+        String actualUrl = driver.getCurrentUrl();
+        Assert.assertEquals(actualUrl, "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
+        WebElement path = driver.findElement(By.cssSelector("div[data-v-6c07a142='']"));
+        String adminText = path.getText();
+        Assert.assertEquals(adminText, "Admin");
+    }
+
+
     @AfterAll
     public static void tearDown() {
         SetUp.quitDriver();

@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным singleton">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц,">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AnnaAtsu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AnnaAtsu/repo-git.git",
+    "accountId": "d47bf71c-16d9-4a93-8ab7-f7dd3430d6e4"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -40,6 +50,7 @@
   "keyToString": {
     "JUnit.AddUser.addNewUser.executor": "Debug",
     "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Debug",
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
     "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
     "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
@@ -54,7 +65,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AdminSearchTest.testSuccessfullSearch">
+  <component name="RunManager" selected="JUnit.AdminSearchTest.testAdminGotoSystemUsers">
     <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -82,6 +93,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.AdminPage" />
       <option name="METHOD_NAME" value="AdminGotoSystemUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminSearchTest.testAdminGotoSystemUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.AdminSearchTest" />
+      <option name="METHOD_NAME" value="testAdminGotoSystemUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,40 +146,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPage.LoginUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
-      <option name="METHOD_NAME" value="LoginUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminSearchTest.testAdminGotoSystemUsers" />
         <item itemvalue="JUnit.AdminSearchTest.testSuccessfullSearch" />
         <item itemvalue="JUnit.LoginTest.testSuccessfulLogin" />
         <item itemvalue="JUnit.AddUser.addNewUser" />
         <item itemvalue="JUnit.AdminPage.AdminGotoSystemUsers" />
-        <item itemvalue="TestNG.LoginPage.LoginUser" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-22-openjdk-22-3183f394aec4-75f08976" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -227,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749111231217</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц,">
+      <option name="closed" value="true" />
+      <created>1749131058085</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749131058085</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,7 +248,8 @@
     <MESSAGE value="модификация adduser2" />
     <MESSAGE value="коммит с законченным Adduser" />
     <MESSAGE value="коммит с законченным singleton" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит с законченным singleton" />
+    <MESSAGE value="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц," />
+    <option name="LAST_COMMIT_MESSAGE" value="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -252,6 +263,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
           <line>75</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
