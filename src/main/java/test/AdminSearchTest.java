@@ -3,6 +3,7 @@ package test;
 import org.example.AdminPageObject;
 import org.example.LoginPageObject;
 import org.example.SetUp;
+import org.example.UserRowElement;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,6 +14,7 @@ import org.testng.Assert;
 import org.testng.AssertJUnit;
 
 import java.time.Duration;
+import java.util.List;
 
 public class AdminSearchTest {
     WebDriver driver;
@@ -46,6 +48,13 @@ public class AdminSearchTest {
         WebElement path = driver.findElement(By.cssSelector("div[data-v-6c07a142='']"));
         String adminText = path.getText();
         Assert.assertEquals(adminText, "Admin");
+        //  ДЛЯ ШАБЛОНА Page element
+        List<UserRowElement> users = adminPage.getUserRows();
+               for (UserRowElement user : users) {
+            if (user.getUsername().equals("Admin")) {
+                Assert.assertEquals(user.getStatus(), "Enabled");
+            }
+        }
     }
 
 
@@ -55,3 +64,8 @@ public class AdminSearchTest {
     }
 
 }
+
+
+
+
+

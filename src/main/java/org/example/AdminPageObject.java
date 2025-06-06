@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AdminPageObject extends TestBase{
 
@@ -33,6 +35,10 @@ public class AdminPageObject extends TestBase{
     @FindBy(xpath = "//div[2]/i")
     WebElement userIcon;
 
+    // ДЛЯ ШАБЛОНА Page element
+    @FindBy(css = ".oxd-table-body .oxd-table-row")
+    List<WebElement> tableRows;
+
     public void navigateToUserSearch() {
         adminMenu.click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
@@ -50,8 +56,14 @@ public class AdminPageObject extends TestBase{
         userIcon.click();
     }
 
-
-
+    // ДЛЯ ШАБЛОНА Page element
+    public List<UserRowElement> getUserRows() {
+        List<UserRowElement> users = new ArrayList<>();
+        for (WebElement row : tableRows) {
+            users.add(new UserRowElement(row));
+        }
+        return users;
+    }
 
 
 
