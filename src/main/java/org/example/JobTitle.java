@@ -5,6 +5,7 @@ import org.example.generator.JobTitleGenerator;
 import org.example.generator.JobVO;
 import org.example.generator.UserGenerator;
 import org.example.generator.UserVO;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,7 @@ public class JobTitle extends TestBase{
 
 
 
+   // @RepeatedTest(3)
     @Test
     void AddJobTitle() {
         driver = SetUp.getDriver();
@@ -62,7 +64,7 @@ public class JobTitle extends TestBase{
         String xpath = "//div[@class='oxd-table-cell oxd-padding-cell' and @role='cell']//div[text()='" + newJob.getJobTitle() + "']";
         WebElement jobElement = driver.findElement(By.xpath(xpath));
         assertEquals(jobElement.getText(), newJob.getJobTitle());
-
+        driver.quit();
     }
 
 

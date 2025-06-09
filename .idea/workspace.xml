@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление jobtitle">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/JobTitlteTest.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление jobtitle и deletejobtitle">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
     </list>
@@ -68,7 +70,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JobTitle.DeleteJobTitle">
+  <component name="RunManager" selected="JUnit.JobTitle.AddJobTitle">
     <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -151,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
         <item itemvalue="JUnit.JobTitle.AddJobTitle" />
+        <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
         <item itemvalue="JUnit.AddUser.addNewUser" />
         <item itemvalue="JUnit.AddUser.addNewUser1" />
         <item itemvalue="JUnit.AddUser.testCreateRandomUser" />
@@ -264,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749456836870</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="добавление jobtitle и deletejobtitle">
+      <option name="closed" value="true" />
+      <created>1749478455265</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749478455265</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -279,7 +289,8 @@
     <MESSAGE value="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin" />
     <MESSAGE value="коммит с законченным Page element - найти самостоятельно где применить" />
     <MESSAGE value="добавление jobtitle" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление jobtitle" />
+    <MESSAGE value="добавление jobtitle и deletejobtitle" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление jobtitle и deletejobtitle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -306,12 +317,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/JobTitle.java</url>
-          <line>61</line>
+          <line>63</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/JobTitle.java</url>
-          <line>63</line>
+          <line>65</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
