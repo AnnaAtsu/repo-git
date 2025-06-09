@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.generator.CandidateGenerator;
+import org.example.generator.CandidateVO;
+import org.example.generator.JobTitleGenerator;
+import org.example.generator.JobVO;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,5 +33,18 @@ public class Candidate {
         driver.findElement(By.xpath("//a[contains(@class,'oxd-main-menu-item')]//span[text()='Recruitment']")).click();
         driver.findElement(By.xpath("//button[contains(@class, 'oxd-button') and contains(., 'Add')]")).click();
         //ввести данные для страницы
+        // Создание VO
+        CandidateVO newCandidate = CandidateGenerator.generateCandidate();
+        WebElement firstName = driver.findElement(By.name("firstName"));
+        Actions actions = new Actions(driver);
+        actions.click(firstName)
+                .sendKeys(firstName, newCandidate.getFirstName())
+                .perform();
+        WebElement middleName = driver.findElement(By.name("middleName"));
+        Actions actions1 = new Actions(driver);
+        actions1.click(middleName)
+                .sendKeys(middleName, newCandidate.getmiddleName())
+                .perform();
+
     }
 }

@@ -22,26 +22,26 @@ public class CandidateVO {
     }
 
 
-    public String middleName() {
+    public String getmiddleName() {
         return  middleName;
     }
 
-    public String lastName() {
+    public String getlastName() {
         return  lastName;
     }
-    public String vacancy() {
+    public String getvacancy() {
         return  vacancy;
     }
-    public String email() {
+    public String getemail() {
         return  email;
     }
-    public String contractNumber() {
+    public String getcontractNumber() {
         return  contractNumber;
     }
-    public String keywords() {
+    public String getkeywords() {
         return  keywords;
     }
-    public String candidateNote() {
+    public String getcandidateNote() {
         return  candidateNote;
     }
 

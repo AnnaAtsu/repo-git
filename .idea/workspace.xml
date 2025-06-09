@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление jobtitle и deletejobtitle">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateVO.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Recruitment -&gt; Add candidate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749478455265</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="добавление основ Recruitment -&gt; Add candidate">
+      <option name="closed" value="true" />
+      <created>1749480557233</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749480557233</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,7 +296,8 @@
     <MESSAGE value="коммит с законченным Page element - найти самостоятельно где применить" />
     <MESSAGE value="добавление jobtitle" />
     <MESSAGE value="добавление jobtitle и deletejobtitle" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление jobtitle и deletejobtitle" />
+    <MESSAGE value="добавление основ Recruitment -&gt; Add candidate" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Recruitment -&gt; Add candidate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
