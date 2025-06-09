@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным Page element - найти самостоятельно где применить">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/JobTitleGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/JobVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление jobtitle">
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/JobTitlteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,28 +45,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AddUser.addNewUser.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AddUser.addNewUser1.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AddUser.testCreateRandomUser.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AdminPage.AdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testSuccessfullSearch.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.LoginPage.LoginUser.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Openbrowser.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AddUser.addNewUser.executor": "Run",
+    "JUnit.AddUser.addNewUser1.executor": "Debug",
+    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
+    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.JobTitle.AddJobTitle.executor": "Run",
+    "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
+    "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
+    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoginPage.LoginUser.executor": "Run",
+    "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
+    "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.AddUser.addNewUser1">
+}]]></component>
+  <component name="RunManager" selected="JUnit.JobTitle.DeleteJobTitle">
+    <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AddUser" />
+      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddUser.addNewUser1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -101,49 +117,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminSearchTest.testAdminGotoSystemUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JobTitle.AddJobTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.AdminSearchTest" />
-      <option name="METHOD_NAME" value="testAdminGotoSystemUsers" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.JobTitle" />
+      <option name="METHOD_NAME" value="AddJobTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminSearchTest.testSuccessfullSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JobTitle.DeleteJobTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.AdminSearchTest" />
-      <option name="METHOD_NAME" value="testSuccessfullSearch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.testSuccessfulLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.JobTitle" />
+      <option name="METHOD_NAME" value="DeleteJobTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
+        <item itemvalue="JUnit.JobTitle.AddJobTitle" />
+        <item itemvalue="JUnit.AddUser.addNewUser" />
         <item itemvalue="JUnit.AddUser.addNewUser1" />
         <item itemvalue="JUnit.AddUser.testCreateRandomUser" />
-        <item itemvalue="JUnit.AdminSearchTest.testAdminGotoSystemUsers" />
-        <item itemvalue="JUnit.AdminSearchTest.testSuccessfullSearch" />
-        <item itemvalue="JUnit.LoginTest.testSuccessfulLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749208619953</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="добавление jobtitle">
+      <option name="closed" value="true" />
+      <created>1749456836870</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749456836870</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -270,7 +278,8 @@
     <MESSAGE value="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц," />
     <MESSAGE value="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin" />
     <MESSAGE value="коммит с законченным Page element - найти самостоятельно где применить" />
-    <option name="LAST_COMMIT_MESSAGE" value="коммит с законченным Page element - найти самостоятельно где применить" />
+    <MESSAGE value="добавление jobtitle" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление jobtitle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -294,6 +303,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
           <line>129</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/JobTitle.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/JobTitle.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
