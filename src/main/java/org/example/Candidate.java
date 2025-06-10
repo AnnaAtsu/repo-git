@@ -80,5 +80,13 @@ public class Candidate {
        driver.findElement(By.xpath("//i[contains(@class, 'oxd-checkbox-input-icon')]")).click();
         // нажать save
         driver.findElement(By.cssSelector("button.oxd-button.oxd-button--medium.oxd-button--secondary.orangehrm-left-space[type='submit']")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
+        //проверки
+        WebElement addedFirstName = driver.findElement(By.name("firstName"));
+        AssertJUnit.assertEquals(firstName, addedFirstName);
+        WebElement addedMiddleName = driver.findElement(By.name("middleName"));
+        AssertJUnit.assertEquals(middleName, addedMiddleName);
+        WebElement addedLastName = driver.findElement(By.name("lastName"));
+        AssertJUnit.assertEquals(lastName, addedLastName);
     }
 }
