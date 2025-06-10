@@ -1,0 +1,31 @@
+package org.example;
+
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import java.time.Duration;
+
+public class AssignLeave {
+    WebDriver driver;
+
+@Test
+    void addAssignLeave() {
+    driver = SetUp.getDriver();
+    driver.manage().window().maximize();
+    driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+    driver.findElement(By.name("username")).click();
+    driver.findElement(By.name("username")).sendKeys("Admin");
+    WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
+    Actions actions1 = new Actions(driver);
+    actions1.click(password)
+            .sendKeys(password, "admin123")
+            .perform();
+    driver.findElement(By.tagName("button")).submit();
+    //найти раздел recruitment
+}
+
+}
