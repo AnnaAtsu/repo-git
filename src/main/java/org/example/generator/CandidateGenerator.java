@@ -2,6 +2,8 @@ package org.example.generator;
 
 import com.github.javafaker.Faker;
 
+import java.time.LocalDate;
+
 public class CandidateGenerator {
 
 
@@ -9,9 +11,10 @@ public class CandidateGenerator {
 
     public static CandidateVO generateCandidate() {
         String firstName = "Natasha" + faker.number().numberBetween(1, 500);
-        String middleName = "Middle " + faker.date();
-        String lastName = "Last " + faker.date();
-        String vacancy = "Junior Account Assistant";
+        String middleName = "Middle " + faker.number().randomNumber(2, true);
+        LocalDate today = LocalDate.now();
+        String lastName = "Last " + today;
+        String vacancy = "account assistant";
         String email = "Pass" + faker.number().randomNumber(5, true) + "@" + faker.expression("yander") + ".ru";
         String contractNumber = String.valueOf(faker.number().randomNumber(3, true));
         String keywords = "Keywords " + faker.address();

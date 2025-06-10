@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Recruitment -&gt; Add candidate">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Recruitment -&gt; Add candidate1">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_25,_5_30_PM_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_25__5_30_PM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/CandidateGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,7 @@
     "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.Candidate.addCandidate.executor": "Run",
     "JUnit.JobTitle.AddJobTitle.executor": "Run",
     "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
     "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
@@ -68,7 +73,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JobTitle.AddJobTitle">
+  <component name="RunManager" selected="JUnit.Candidate.addCandidate">
     <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -101,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUser.testCreateRandomUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Candidate.addCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -110,8 +115,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddUser" />
-      <option name="METHOD_NAME" value="testCreateRandomUser" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Candidate" />
+      <option name="METHOD_NAME" value="addCandidate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,13 +156,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Candidate.addCandidate" />
         <item itemvalue="JUnit.JobTitle.AddJobTitle" />
         <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
         <item itemvalue="JUnit.AddUser.addNewUser" />
         <item itemvalue="JUnit.AddUser.addNewUser1" />
-        <item itemvalue="JUnit.AddUser.testCreateRandomUser" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-3183f394aec4-75f08976" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -280,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749480557233</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="добавление основ Recruitment -&gt; Add candidate1">
+      <option name="closed" value="true" />
+      <created>1749480931199</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749480931199</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -297,7 +317,8 @@
     <MESSAGE value="добавление jobtitle" />
     <MESSAGE value="добавление jobtitle и deletejobtitle" />
     <MESSAGE value="добавление основ Recruitment -&gt; Add candidate" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Recruitment -&gt; Add candidate" />
+    <MESSAGE value="добавление основ Recruitment -&gt; Add candidate1" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Recruitment -&gt; Add candidate1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -321,16 +342,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
           <line>129</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/JobTitle.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/JobTitle.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -27,6 +27,7 @@ public class JobTitle extends TestBase{
    // @RepeatedTest(3)
     @Test
     void AddJobTitle() {
+
         driver = SetUp.getDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -64,7 +65,7 @@ public class JobTitle extends TestBase{
         String xpath = "//div[@class='oxd-table-cell oxd-padding-cell' and @role='cell']//div[text()='" + newJob.getJobTitle() + "']";
         WebElement jobElement = driver.findElement(By.xpath(xpath));
         assertEquals(jobElement.getText(), newJob.getJobTitle());
-        driver.quit();
+        //driver.quit();
     }
 
 
