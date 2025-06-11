@@ -5,11 +5,10 @@ import java.time.LocalDate;
 public class AssingLeaveVO {
 
     private  final String employeeName, comments;
-    private final LocalDate fromDate;
-    private LocalDate toDate;
+    private final String fromDate, toDate;
 
 
-    public AssingLeaveVO(String employeeName, LocalDate fromDate, LocalDate toDate, String comments) {
+    public AssingLeaveVO(String employeeName, String fromDate, String toDate, String comments) {
         this.employeeName = employeeName;
         this.comments = comments;
         this.fromDate = fromDate;
@@ -18,7 +17,7 @@ public class AssingLeaveVO {
 
         public String getEmployeeName() { return employeeName; }
         public String getComments() { return comments; }
-        public LocalDate getFromDate() { return fromDate; }
-        public LocalDate getToDate() { return toDate; }
+        public String getFromDate() { return fromDate; }
+        public String getToDate() { return toDate; }
 
 }

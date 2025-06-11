@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Assign Leave">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Assign Leave2">
+      <change afterPath="$PROJECT_DIR$/src/main/test/file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/AssignLeaveGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/AssignLeaveGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/AssingLeaveVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/AssingLeaveVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749566743692</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="добавление основ Assign Leave2">
+      <option name="closed" value="true" />
+      <created>1749642403788</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749642403788</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -342,7 +352,8 @@
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1, без проверки формы" />
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио" />
     <MESSAGE value="добавление основ Assign Leave" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Assign Leave" />
+    <MESSAGE value="добавление основ Assign Leave2" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Assign Leave2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
