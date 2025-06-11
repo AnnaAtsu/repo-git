@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Assign Leave2">
-      <change afterPath="$PROJECT_DIR$/src/main/test/file.txt" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Assign Leave3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/AssignLeaveGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/AssignLeaveGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generator/AssingLeaveVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/AssingLeaveVO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AssignLeave.addAssignLeave">
+  <component name="RunManager" selected="JUnit.Candidate.addCandidate">
     <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -155,9 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Candidate.addCandidate" />
         <item itemvalue="JUnit.AssignLeave.addAssignLeave" />
         <item itemvalue="JUnit.AddUser.addNewUser" />
-        <item itemvalue="JUnit.Candidate.addCandidate" />
         <item itemvalue="JUnit.JobTitle.AddJobTitle" />
         <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
       </list>
@@ -331,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749642403788</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="добавление основ Assign Leave3">
+      <option name="closed" value="true" />
+      <created>1749644930740</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749644930740</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -353,7 +360,8 @@
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио" />
     <MESSAGE value="добавление основ Assign Leave" />
     <MESSAGE value="добавление основ Assign Leave2" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Assign Leave2" />
+    <MESSAGE value="добавление основ Assign Leave3" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Assign Leave3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -16,9 +16,11 @@ public class AssignLeaveGenerator {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String fromDate = currentDate.format(formatter);
 
-        LocalDate currentDate1 = LocalDate.now();
-        LocalDate futureDate = currentDate1.plusDays(2);
-        String toDate = futureDate.format(formatter);
+        LocalDate futureDate = currentDate.plusDays(2);
+
+        // Форматируем дату в строку в формате "год-месяц-день"
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String toDate = futureDate.format(formatter1);
         String comments = faker.color().name();
 
         return new AssingLeaveVO(employeeName, fromDate, toDate, comments);

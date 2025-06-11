@@ -78,6 +78,12 @@ public class Candidate {
                 .sendKeys(newCandidate.getkeywords())
                 .perform();
        driver.findElement(By.xpath("//i[contains(@class, 'oxd-checkbox-input-icon')]")).click();
+       // добавить файл
+        WebElement fileInput = driver.findElement(By.className("oxd-file-input"));
+        String filePath = "/home/user/idee/MypetProject/src/main/test/file.txt";
+        fileInput.sendKeys(filePath);
+
+
         // нажать save
         driver.findElement(By.cssSelector("button.oxd-button.oxd-button--medium.oxd-button--secondary.orangehrm-left-space[type='submit']")).click();
         //проверки

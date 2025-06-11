@@ -39,15 +39,15 @@ public class AssignLeave {
     //выбрать 1 элемент из списка
     driver.findElement(By.xpath("//div[@role=\"listbox\"]/div[@role=\"option\"][1]")).click();
     // выбрать тип лива
-    driver.findElement(By.cssSelector("oxd-icon bi-caret-down-fill oxd-select-text--arrow")).click();
-    driver.findElement(By.xpath("//div[@role=\"listbox\"]/div[@role=\"option\"][4]")).click();
+    //driver.findElement(By.cssSelector("oxd-icon bi-caret-down-fill oxd-select-text--arrow")).click();
+    //driver.findElement(By.xpath("//div[@role=\"listbox\"]/div[@role=\"option\"][4]")).click();
     //указать даты
     List<WebElement> inputs = driver.findElements(By.cssSelector("[placeholder='yyyy-dd-mm']"));
     inputs.get(0).sendKeys(newAssignLeave.getFromDate());
-    inputs.get(1).sendKeys(newAssignLeave.getToDate());
+    inputs.get(1).sendKeys(newAssignLeave.getFromDate());
     driver.findElement(By.tagName("textarea")).sendKeys(newAssignLeave.getComments());
 
-   driver.findElement(By.cssSelector("@type='submit'")).click();
+   driver.findElement(By.xpath("//*[@type='submit']")).click();
 
 
 }
