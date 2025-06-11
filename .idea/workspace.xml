@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/AssignLeaveGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generator/AssingLeaveVO.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление основ Assign Leave">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssignLeave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,31 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AddUser.addNewUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddUser.addNewUser1.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AddUser.testCreateRandomUser.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AdminPage.AdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testSuccessfullSearch.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.Candidate.addCandidate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitle.AddJobTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitle.DeleteJobTitle.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.LoginPage.LoginUser.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Openbrowser.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AddUser.addNewUser.executor": "Run",
+    "JUnit.AddUser.addNewUser1.executor": "Debug",
+    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
+    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.AssignLeave.addAssignLeave.executor": "Run",
+    "JUnit.Candidate.addCandidate.executor": "Run",
+    "JUnit.JobTitle.AddJobTitle.executor": "Run",
+    "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
+    "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
+    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoginPage.LoginUser.executor": "Run",
+    "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
+    "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.Candidate.addCandidate">
+}]]></component>
+  <component name="RunManager" selected="JUnit.AssignLeave.addAssignLeave">
     <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -88,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddUser.addNewUser1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AssignLeave.addAssignLeave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +96,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddUser" />
-      <option name="METHOD_NAME" value="addNewUser1" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AssignLeave" />
+      <option name="METHOD_NAME" value="addAssignLeave" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AssignLeave.addAssignLeave" />
+        <item itemvalue="JUnit.AddUser.addNewUser" />
         <item itemvalue="JUnit.Candidate.addCandidate" />
         <item itemvalue="JUnit.JobTitle.AddJobTitle" />
         <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
-        <item itemvalue="JUnit.AddUser.addNewUser" />
-        <item itemvalue="JUnit.AddUser.addNewUser1" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749562740340</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="добавление основ Assign Leave">
+      <option name="closed" value="true" />
+      <created>1749566743692</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749566743692</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -334,7 +341,8 @@
     <MESSAGE value="добавление основ Recruitment -&gt; Add candidate1" />
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1, без проверки формы" />
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио" />
+    <MESSAGE value="добавление основ Assign Leave" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление основ Assign Leave" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

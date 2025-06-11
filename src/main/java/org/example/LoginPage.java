@@ -51,5 +51,18 @@ public class LoginPage extends TestBase{
 
     }
 
+    @Test
+    void logout() {
+        driver.findElement( By.cssSelector("oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.findElement(By.xpath("//a[@href=\"/web/index.php/auth/logout\" and text()=\"Logout\"]")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        String loginUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+        AssertJUnit.assertEquals(loginUrl, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
+
+
+    }
+
 
 }
