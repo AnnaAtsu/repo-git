@@ -1,10 +1,11 @@
 package test;
 
-import org.example.JobTitle;
-import org.example.LoginPageObject;
-import org.example.SetUp;
+import org.example.*;
+import org.example.generator.JobTitleGenerator;
+import org.example.generator.JobVO;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
+import org.testng.AssertJUnit;
 
 import java.time.Duration;
 
@@ -19,6 +20,22 @@ public class JobTitlteTest {
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         loginPage = new LoginPageObject(driver);
+        JobTitlePageObject jobTitlePageObject = new JobTitlePageObject(driver);
+        //DashboardPage dashboardPage = new DashboardPage(driver);
+        //        dashboardPage.goToAdmin();
+        AdminPageObject adminPageObject = new AdminPageObject(driver);
+        adminPageObject.navigateToUserSearch();
+        jobTitlePageObject.openJobTitles();
+        String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList";
+        AssertJUnit.assertEquals(expectedUrl, driver.getCurrentUrl());
+
+        jobTitlePageObject.clickAddButton();
+        JobVO newJob = JobTitleGenerator.generateTitle();
+        jobTitlePageObject.fillJobForm(newJob);
+        jobTitlePageObject.saveJob();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        AssertJUnit.assertTrue(jobTitlePageObject.isJobPresent(newJob.getJobTitle()));
+
     }
 
 

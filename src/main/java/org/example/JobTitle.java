@@ -24,8 +24,8 @@ public class JobTitle extends TestBase{
 
 
 
-   // @RepeatedTest(3)
-    @Test
+   @RepeatedTest(3)
+   // @Test
     void AddJobTitle() {
 
         driver = SetUp.getDriver();
