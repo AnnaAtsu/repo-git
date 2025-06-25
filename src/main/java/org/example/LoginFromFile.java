@@ -23,14 +23,14 @@ public class LoginFromFile {
         driver.get(baseUrl);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         String username = ConfProperties.getProperty("adminLogin");
-        driver.findElement(By.name("username")).click();
         driver.findElement(By.name("username")).sendKeys(username);
         String password = ConfProperties.getProperty("AdminPass");
-        driver.findElement(By.xpath("//input[@type='password']")).click();
         driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
         driver.findElement(By.tagName("button")).submit();
         String title = driver.getTitle();
         AssertJUnit.assertEquals("OrangeHRM", title);
+        String currentUrl = driver.getCurrentUrl();
+        AssertJUnit.assertEquals("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index", currentUrl);
         String adminName = driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
         AssertJUnit.assertEquals(adminName, "Dashboard");
         driver.quit();

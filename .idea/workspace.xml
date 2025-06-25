@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление  DAshboard c page object">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginFromFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="чтение логина и пароля из файла">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginFromFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750852703112</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="чтение логина и пароля из файла">
+      <option name="closed" value="true" />
+      <created>1750860135911</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1750860135911</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -414,7 +420,8 @@
     <MESSAGE value="добавление  jobTitlePage в формате pageobject 3 раза" />
     <MESSAGE value="добавление  DAshboard" />
     <MESSAGE value="добавление  DAshboard c page object" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление  DAshboard c page object" />
+    <MESSAGE value="чтение логина и пароля из файла" />
+    <option name="LAST_COMMIT_MESSAGE" value="чтение логина и пароля из файла" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
