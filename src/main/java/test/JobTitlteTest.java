@@ -42,6 +42,39 @@ public class JobTitlteTest {
 
     }
 
+
+    @Test
+    public void deleteAddedJob() {
+        driver = SetUp.getDriver();
+        driver.manage().window().maximize();
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        loginPage = new LoginPageObject(driver);
+        loginPage.loginAs("Admin", "admin123");
+        JobTitlePageObject jobTitlePageObject = new JobTitlePageObject(driver);
+        //DashboardPage dashboardPage = new DashboardPage(driver);
+        //        dashboardPage.goToAdmin();
+        AdminPageObject adminPageObject = new AdminPageObject(driver);
+        adminPageObject.navigateToUserSearch();
+        jobTitlePageObject.openJobTitles();
+        String expectedUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList";
+        AssertJUnit.assertEquals(expectedUrl, driver.getCurrentUrl());
+
+        jobTitlePageObject.clickAddButton();
+        JobVO newJob = JobTitleGenerator.generateTitle();
+        jobTitlePageObject.fillJobForm(newJob);
+        jobTitlePageObject.saveJob();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        AssertJUnit.assertTrue(jobTitlePageObject.isJobPresent(newJob.getJobTitle()));
+
+
+        // Удаление той же самой job
+        jobTitlePageObject.deleteJobByTitle(newJob.getJobTitle());
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+        AssertJUnit.assertFalse(jobTitlePageObject.isJobPresent(newJob.getJobTitle()));
+
+    }
+
     @RepeatedTest(3)
     public void AddJobTitleRepeatedly(RepetitionInfo repetitionInfo) {
         driver = SetUp.getDriver();

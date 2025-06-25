@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление  jobTitlePage в формате pageobject">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление  jobTitlePage в формате pageobject 3 раза">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/JobTitlteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/JobTitlteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,10 +57,12 @@
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
     "JUnit.AssignLeave.addAssignLeave.executor": "Run",
     "JUnit.Candidate.addCandidate.executor": "Run",
+    "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
     "JUnit.JobTitle.AddJobTitle.executor": "Run",
     "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
     "JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor": "Run",
     "JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor": "Run",
+    "JUnit.JobTitlteTest.deleteAddedJob.executor": "Run",
     "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
     "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -71,39 +76,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JobTitlteTest.AddJobTitleRepeatedly">
-    <configuration name="AddUser.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AddUser" />
-      <option name="METHOD_NAME" value="addNewUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AssignLeave.addAssignLeave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AssignLeave" />
-      <option name="METHOD_NAME" value="addAssignLeave" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Dashboard.checkElementsDashboard">
     <configuration name="Candidate.addCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -115,6 +88,22 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.Candidate" />
       <option name="METHOD_NAME" value="addCandidate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dashboard.checkElementsDashboard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Dashboard" />
+      <option name="METHOD_NAME" value="checkElementsDashboard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,13 +141,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobTitlteTest.deleteAddedJob" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.JobTitlteTest" />
+      <option name="METHOD_NAME" value="deleteAddedJob" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Dashboard.checkElementsDashboard" />
+        <item itemvalue="JUnit.JobTitlteTest.deleteAddedJob" />
         <item itemvalue="JUnit.JobTitlteTest.AddJobTitleRepeatedly" />
         <item itemvalue="JUnit.JobTitlteTest.AddJobTitleMultipleTimes" />
         <item itemvalue="JUnit.Candidate.addCandidate" />
-        <item itemvalue="JUnit.AssignLeave.addAssignLeave" />
-        <item itemvalue="JUnit.AddUser.addNewUser" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750775944718</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="добавление  jobTitlePage в формате pageobject 3 раза">
+      <option name="closed" value="true" />
+      <created>1750776541767</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1750776541767</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -379,7 +392,8 @@
     <MESSAGE value="добавление основ Assign Leave3" />
     <MESSAGE value="добавление candidate файла" />
     <MESSAGE value="добавление  jobTitlePage в формате pageobject" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление  jobTitlePage в формате pageobject" />
+    <MESSAGE value="добавление  jobTitlePage в формате pageobject 3 раза" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление  jobTitlePage в формате pageobject 3 раза" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
