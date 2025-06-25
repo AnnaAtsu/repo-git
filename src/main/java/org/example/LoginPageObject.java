@@ -19,6 +19,11 @@ public class LoginPageObject  {
     @FindBy(tagName = "button")
     WebElement loginButton;
 
+    @FindBy(className = "oxd-userdropdown-icon")
+    WebElement iconLogout;
+    @FindBy(xpath = "\"//a[@href=\\\"/web/index.php/auth/logout\\\" and text()=\\\"Logout\\\"]\"")
+    WebElement logoutButton;
+
     // Конструктор
     public LoginPageObject(WebDriver driver) {
         this.driver = driver;
@@ -44,5 +49,16 @@ public class LoginPageObject  {
         clickLogin();
     }
 
+
+    public void logOut() {
+        iconLogout.click();
+        loginButton.click();
+    }
+    public void logoutIcon() {
+        iconLogout.click();
+    }
+    public void clickLogout() {
+        loginButton.click();
+    }
 
 }

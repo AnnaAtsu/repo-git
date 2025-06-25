@@ -36,6 +36,20 @@ public class LoginTest {
         AssertJUnit.assertEquals(adminName, "Dashboard");
     }
 
+
+    @Test
+    public void testSuccessfullLogout() {
+        loginPage.loginAs("Admin", "admin123");
+        String title = driver.getTitle();
+        AssertJUnit.assertEquals("OrangeHRM", title);
+        String adminName = driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
+        AssertJUnit.assertEquals(adminName, "Dashboard");
+        loginPage.logOut();
+        String loginUrl = driver.getCurrentUrl();
+        AssertJUnit.assertEquals(loginUrl, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.quit();
+    }
+
     @AfterAll
     public static void tearDown() {
         SetUp.quitDriver();

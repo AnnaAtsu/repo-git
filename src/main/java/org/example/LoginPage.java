@@ -53,13 +53,13 @@ public class LoginPage {
 
     @Test
     void logout() {
-        driver.findElement( By.cssSelector("oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon")).click();
+        driver.findElement(By.className("oxd-userdropdown-icon")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.findElement(By.xpath("//a[@href=\"/web/index.php/auth/logout\" and text()=\"Logout\"]")).click();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-        String loginUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+        String loginUrl = driver.getCurrentUrl();
         AssertJUnit.assertEquals(loginUrl, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
+       driver.quit();
 
 
     }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="чтение логина и пароля из файла">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="чтение логина и пароля из файла1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginFromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.LoginFromFile.LoginUserFromFile.executor": "Run",
     "TestNG.LoginPage.LoginUser.executor": "Run",
+    "TestNG.LoginPage.logout.executor": "Run",
     "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
     "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
     "git-widget-placeholder": "master",
@@ -75,7 +78,7 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginFromFile.LoginUserFromFile">
+  <component name="RunManager" selected="JUnit.LoginTest.testSuccessfullLogout">
     <configuration name="DashboardElementsTest.checkDashboardElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -92,23 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dashboard.checkElementsDashboard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Dashboard" />
-      <option name="METHOD_NAME" value="checkElementsDashboard" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobTitlteTest.AddJobTitleRepeatedly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.testSuccessfullLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -117,24 +104,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.JobTitlteTest" />
-      <option name="METHOD_NAME" value="AddJobTitleRepeatedly(org.junit.jupiter.api.RepetitionInfo)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobTitlteTest.deleteAddedJob" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.JobTitlteTest" />
-      <option name="METHOD_NAME" value="deleteAddedJob" />
+      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
+      <option name="METHOD_NAME" value="testSuccessfullLogout" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,13 +129,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginPage.LoginUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
+      <option name="METHOD_NAME" value="LoginUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPage.logout" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
+      <option name="METHOD_NAME" value="logout" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginTest.testSuccessfullLogout" />
+        <item itemvalue="TestNG.LoginPage.logout" />
+        <item itemvalue="TestNG.LoginPage.LoginUser" />
         <item itemvalue="TestNG.LoginFromFile.LoginUserFromFile" />
         <item itemvalue="JUnit.DashboardElementsTest.checkDashboardElements" />
-        <item itemvalue="JUnit.Dashboard.checkElementsDashboard" />
-        <item itemvalue="JUnit.JobTitlteTest.deleteAddedJob" />
-        <item itemvalue="JUnit.JobTitlteTest.AddJobTitleRepeatedly" />
       </list>
     </recent_temporary>
   </component>
@@ -392,11 +399,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750860135911</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="чтение логина и пароля из файла1">
+      <option name="closed" value="true" />
+      <created>1750860382395</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1750860382395</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="коммит1" />
     <MESSAGE value="коммит12" />
     <MESSAGE value="добавила adduser" />
     <MESSAGE value="модификация adduser" />
@@ -421,7 +435,8 @@
     <MESSAGE value="добавление  DAshboard" />
     <MESSAGE value="добавление  DAshboard c page object" />
     <MESSAGE value="чтение логина и пароля из файла" />
-    <option name="LAST_COMMIT_MESSAGE" value="чтение логина и пароля из файла" />
+    <MESSAGE value="чтение логина и пароля из файла1" />
+    <option name="LAST_COMMIT_MESSAGE" value="чтение логина и пароля из файла1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
