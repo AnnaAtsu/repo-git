@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
-public class JobTitlePageObject extends TestBase{
+public class JobTitlePageObject {
     private By addButton = By.cssSelector("button.oxd-button.oxd-button--medium.oxd-button--secondary");
     private By jobTitleInput = By.xpath("(//input[contains(@class, 'oxd-input')])[2]");
     private By descriptionInput = By.xpath("//textarea[@placeholder='Type description here']");

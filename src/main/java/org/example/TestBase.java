@@ -4,8 +4,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.NoSuchElementException;
@@ -15,6 +18,10 @@ public class TestBase {
 
 
     WebDriver driver;
+
+    public TestBase(WebDriver driver) {
+        this.driver = driver;
+    }
 
     @BeforeEach
     public void setup() {
@@ -40,5 +47,13 @@ public class TestBase {
         driver.findElement(By.xpath("//button[contains(@class, 'oxd-button') and contains(., 'Add')]")).click();
     }
 
+    public boolean isElementVisible(By locator) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
+        } catch (TimeoutException | NoSuchElementException e) {
+            return false;
+        }
+    }
 
 }

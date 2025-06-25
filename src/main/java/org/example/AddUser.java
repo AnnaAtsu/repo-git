@@ -20,7 +20,7 @@ import java.util.Random;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class AddUser extends TestBase{
+public class AddUser{
     WebDriver driver;
 
 

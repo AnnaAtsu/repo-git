@@ -11,7 +11,7 @@ import org.testng.AssertJUnit;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
-public class Dashboard extends TestBase{
+public class Dashboard{
 
     WebDriver driver;
 
@@ -44,6 +44,8 @@ public class Dashboard extends TestBase{
        Assert.assertTrue(isElementVisible(By.xpath("//p[@class='oxd-text oxd-text--p' and text()='Employee Distribution by Sub Unit']")));
        Assert.assertTrue(isElementVisible(By.xpath("//p[@class='oxd-text oxd-text--p' and text()='Employee Distribution by Location']")));
        Assert.assertTrue(isElementVisible(By.className("emp-attendance-chart")));
+       Assert.assertTrue(isElementVisible(By.className("oxd-pie-chart")));
+       Assert.assertTrue(isElementVisible(By.className("orangehrm-todo-list")));
        Assert.assertTrue(isElementVisible(By.xpath("//h6[text()='Dashboard']")));
        Assert.assertTrue(isElementVisible(By.xpath("//button[@title='Assign Leave']")));
        Assert.assertTrue(isElementVisible(By.xpath("//button[@title='Leave List']")));
@@ -51,6 +53,7 @@ public class Dashboard extends TestBase{
        Assert.assertTrue(isElementVisible(By.xpath("//button[@title='Apply Leave']")));
        Assert.assertTrue(isElementVisible(By.xpath("//button[@title='My Leave']")));
        Assert.assertTrue(isElementVisible(By.xpath("//button[@title='My Timesheet']")));
+       driver.quit();
     }
 
     public boolean isElementVisible(By locator) {

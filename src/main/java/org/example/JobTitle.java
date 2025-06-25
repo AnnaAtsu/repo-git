@@ -18,7 +18,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class JobTitle extends TestBase{
+public class JobTitle {
 
     WebDriver driver;
 

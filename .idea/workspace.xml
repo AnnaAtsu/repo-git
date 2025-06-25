@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление  jobTitlePage в формате pageobject 3 раза">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Dashboard.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавление  DAshboard">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DashboardPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/DashboardElementsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/JobTitlteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/JobTitlteTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +66,7 @@
     "JUnit.AssignLeave.addAssignLeave.executor": "Run",
     "JUnit.Candidate.addCandidate.executor": "Run",
     "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
+    "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
     "JUnit.JobTitle.AddJobTitle.executor": "Run",
     "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
     "JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor": "Run",
@@ -76,18 +85,18 @@
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Dashboard.checkElementsDashboard">
-    <configuration name="Candidate.addCandidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DashboardElementsTest.checkDashboardElements">
+    <configuration name="DashboardElementsTest.checkDashboardElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Candidate" />
-      <option name="METHOD_NAME" value="addCandidate" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.DashboardElementsTest" />
+      <option name="METHOD_NAME" value="checkDashboardElements" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DashboardElementsTest.checkDashboardElements" />
         <item itemvalue="JUnit.Dashboard.checkElementsDashboard" />
         <item itemvalue="JUnit.JobTitlteTest.deleteAddedJob" />
         <item itemvalue="JUnit.JobTitlteTest.AddJobTitleRepeatedly" />
         <item itemvalue="JUnit.JobTitlteTest.AddJobTitleMultipleTimes" />
-        <item itemvalue="JUnit.Candidate.addCandidate" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750776541767</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="добавление  DAshboard">
+      <option name="closed" value="true" />
+      <created>1750851888617</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1750851888617</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -393,7 +410,8 @@
     <MESSAGE value="добавление candidate файла" />
     <MESSAGE value="добавление  jobTitlePage в формате pageobject" />
     <MESSAGE value="добавление  jobTitlePage в формате pageobject 3 раза" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление  jobTitlePage в формате pageobject 3 раза" />
+    <MESSAGE value="добавление  DAshboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление  DAshboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

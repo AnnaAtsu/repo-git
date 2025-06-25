@@ -9,7 +9,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminPageObject extends TestBase{
+public class AdminPageObject {
 
     WebDriver driver;
     public AdminPageObject(WebDriver driver) {

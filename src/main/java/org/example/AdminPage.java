@@ -13,7 +13,7 @@ import java.time.Duration;
 
 //import static org.example.SetUp.driver;
 
-public class AdminPage extends TestBase{
+public class AdminPage {
     WebDriver driver;
 
 

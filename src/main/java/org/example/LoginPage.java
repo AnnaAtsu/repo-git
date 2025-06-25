@@ -13,7 +13,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LoginPage extends TestBase{
+public class LoginPage {
     WebDriver driver;
 
 

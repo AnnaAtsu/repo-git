@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
-public class Openbrowser extends TestBase{
+public class Openbrowser {
     WebDriver driver;
 
        @Test
