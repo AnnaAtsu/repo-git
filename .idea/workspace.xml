@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="чтение логина и пароля из файла1">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="коммит с законченным Value object - для добавления пользователей.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,38 +45,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AddUser.addNewUser.executor": "Run",
-    "JUnit.AddUser.addNewUser1.executor": "Debug",
-    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
-    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
-    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
-    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
-    "JUnit.AssignLeave.addAssignLeave.executor": "Run",
-    "JUnit.Candidate.addCandidate.executor": "Run",
-    "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
-    "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
-    "JUnit.JobTitle.AddJobTitle.executor": "Run",
-    "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
-    "JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor": "Run",
-    "JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor": "Run",
-    "JUnit.JobTitlteTest.deleteAddedJob.executor": "Run",
-    "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
-    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.LoginFromFile.LoginUserFromFile.executor": "Run",
-    "TestNG.LoginPage.LoginUser.executor": "Run",
-    "TestNG.LoginPage.logout.executor": "Run",
-    "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
-    "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AddUser.addNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AddUser.addNewUser1.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AddUser.testCreateRandomUser.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AdminPage.AdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminSearchTest.testSuccessfullSearch.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AssignLeave.addAssignLeave.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Candidate.addCandidate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Dashboard.checkElementsDashboard.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DashboardElementsTest.checkDashboardElements.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitle.AddJobTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitle.DeleteJobTitle.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitlteTest.deleteAddedJob.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testSuccessfulLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.LoginFromFile.LoginUserFromFile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPage.LoginUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPage.logout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Openbrowser.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.LoginTest.testSuccessfullLogout">
     <configuration name="DashboardElementsTest.checkDashboardElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
@@ -174,13 +173,6 @@
         <item itemvalue="JUnit.DashboardElementsTest.checkDashboardElements" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-22-openjdk-22-3183f394aec4-75f08976" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
