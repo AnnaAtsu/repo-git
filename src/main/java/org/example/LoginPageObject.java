@@ -52,13 +52,13 @@ public class LoginPageObject  {
 
     public void logOut() {
         iconLogout.click();
-        loginButton.click();
+        logoutButton.click();
     }
     public void logoutIcon() {
         iconLogout.click();
     }
     public void clickLogout() {
-        loginButton.click();
+        logoutButton.click();
     }
 
 }
