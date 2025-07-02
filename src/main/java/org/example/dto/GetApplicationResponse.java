@@ -1,8 +1,6 @@
 package org.example.dto;
 
 import lombok.Getter;
-
-
 import java.util.List;
 
 @Getter

@@ -18,9 +18,9 @@ public class Application {
                 .get()
                 .then()
                 .spec(SpecConfig.responseSpecification())
-                .statusCode(201)
+                .statusCode(200)
                 .extract().as(GetApplicationResponse.class);
 
-        assertNotNull(response.getClass()); //getTotal()
+        assertNotNull(response.getTotal());
     }
 }

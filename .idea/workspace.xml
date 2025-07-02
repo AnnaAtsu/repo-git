@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправила logout c pageobject">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/client/SpecConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/ApplicationData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало rest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/AdminRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="spotless" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -58,6 +62,7 @@
     "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.Application.getApplications.executor": "Run",
     "JUnit.AssignLeave.addAssignLeave.executor": "Run",
     "JUnit.Candidate.addCandidate.executor": "Run",
     "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
@@ -84,18 +89,18 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LoginTest.testSuccessfullLogout">
-    <configuration name="DashboardElementsTest.checkDashboardElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Application.getApplications">
+    <configuration name="Application.getApplications" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="org.example.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DashboardElementsTest" />
-      <option name="METHOD_NAME" value="checkDashboardElements" />
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
+      <option name="METHOD_NAME" value="getApplications" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Application.getApplications" />
         <item itemvalue="JUnit.LoginTest.testSuccessfullLogout" />
-        <item itemvalue="TestNG.LoginPage.logout" />
         <item itemvalue="TestNG.LoginPage.LoginUser" />
+        <item itemvalue="TestNG.LoginPage.logout" />
         <item itemvalue="TestNG.LoginFromFile.LoginUserFromFile" />
-        <item itemvalue="JUnit.DashboardElementsTest.checkDashboardElements" />
       </list>
     </recent_temporary>
   </component>
@@ -423,6 +428,17 @@
     </task>
     <option name="localTasksCounter" value="29" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавила adduser" />

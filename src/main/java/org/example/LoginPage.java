@@ -4,12 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 
 import java.time.Duration;
+import java.util.logging.Level;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -23,8 +27,17 @@ public class LoginPage {
         //чтобы не указывать путь до драйвера напрямую
        // WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
         //WebDriver driver = new ChromeDriver();
-
-        //WebDriver driver = new ChromeDriver();
+       //как получить логи
+      //  LoggingPreferences logs = new LoggingPreferences();
+        //logs.enable(LogType.DRIVER, Level.ALL);
+        //ChromeOptions options = new ChromeOptions();
+        //options.setCapability("goog:loggingPrefs", logs);
+        //WebDriver driver = new ChromeDriver(options);
+        //driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        //driver.manage()
+          //      .logs()
+            //            .get(LogType.DRIVER)
+              //                  .forEach(logEntry -> System.out.println(logEntry.getMessage()));
         driver = SetUp.getDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
