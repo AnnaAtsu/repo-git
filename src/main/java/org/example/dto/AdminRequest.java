@@ -1,4 +1,12 @@
 package org.example.dto;
 
-public class AdminRequest {
+public record AdminRequest(
+    String personalLastName,
+String personalFirstName,
+String personalMiddleName,
+String personalPhoneNumber,
+String personalNumberOfPassport,
+String dateofbirth) {
+
+
 }

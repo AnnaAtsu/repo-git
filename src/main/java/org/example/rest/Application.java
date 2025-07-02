@@ -23,4 +23,22 @@ public class Application {
 
         assertNotNull(response.getTotal());
     }
+
+    @Test
+    public void getApplStatus() {
+        GetApplicationResponse response =
+                given()
+                        .spec(SpecConfig.requestSpecification())
+                        .basePath("/getApplStatus/51577")
+                        .when()
+                        .get()
+                        .then()
+                        .spec(SpecConfig.responseSpecification())
+                        .statusCode(200)
+                        .extract().as(GetApplicationResponse.class);
+        assertNotNull(response.getTotal());
+    }
+
+
+
 }

@@ -7,14 +7,14 @@ import lombok.Getter;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class ApplicationData {
-    private Integer applicationId;
-    private Integer citizenId;
-    private Integer applicantId;
 
-    private Integer staffId;
+    private Integer applicationid;
+    private Integer citizenid;
+    private Integer applicantid;
+    private Integer staffid;
     @JsonProperty("dateofapplication")
     private String dateOfApplication;
-    private String kindofApplication;
+    private String kindofapplication;
     private String statusofapplicaion;
     private String channel;
     private String image;
