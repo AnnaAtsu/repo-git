@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало rest1">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало rest2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/AdminRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/AdminRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/ApplicationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/ApplicationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,23 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Application.getApplStatus">
+  <component name="RunManager" selected="JUnit.AdminTest.sendAdminRequestTest">
+    <configuration name="AdminTest.sendAdminRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.AdminTest" />
+      <option name="METHOD_NAME" value="sendAdminRequestTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application.getApplStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -157,31 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPage.logout" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
-      <option name="METHOD_NAME" value="logout" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminTest.sendAdminRequestTest" />
         <item itemvalue="JUnit.Application.getApplStatus" />
         <item itemvalue="JUnit.Application.getApplications" />
         <item itemvalue="JUnit.LoginTest.testSuccessfullLogout" />
         <item itemvalue="TestNG.LoginPage.LoginUser" />
-        <item itemvalue="TestNG.LoginPage.logout" />
       </list>
     </recent_temporary>
   </component>
@@ -433,7 +427,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751461789264</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="начало rest2">
+      <option name="closed" value="true" />
+      <created>1751466746832</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1751466746832</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -448,7 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="модификация adduser" />
     <MESSAGE value="модификация adduser2" />
     <MESSAGE value="коммит с законченным Adduser" />
     <MESSAGE value="коммит с законченным singleton" />
@@ -473,7 +474,8 @@
     <MESSAGE value="чтение логина и пароля из файла1" />
     <MESSAGE value="поправила logout c pageobject" />
     <MESSAGE value="начало rest1" />
-    <option name="LAST_COMMIT_MESSAGE" value="начало rest1" />
+    <MESSAGE value="начало rest2" />
+    <option name="LAST_COMMIT_MESSAGE" value="начало rest2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
