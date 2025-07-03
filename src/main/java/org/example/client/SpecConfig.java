@@ -14,7 +14,7 @@ public class SpecConfig {
 
     public static RequestSpecification requestSpecification() {
         return new RequestSpecBuilder()
-                .setBaseUri("http://regoffice.senla.eu")
+                .setBaseUri("https://regoffice.senla.eu")
                 .setAuth(RestAssured.basic("user", "senlatest"))
                 .setContentType(ContentType.JSON)
                 .log(LogDetail.ALL)

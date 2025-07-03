@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало rest2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/SpecConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/SpecConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/AdminRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/AdminRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/GetApplicationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +64,10 @@
     "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.AdminTest.sendAdminRequestTest.executor": "Run",
+    "JUnit.Application.getApplStatus (1).executor": "Run",
     "JUnit.Application.getApplStatus.executor": "Run",
+    "JUnit.Application.getApplStatusFromList.executor": "Run",
     "JUnit.Application.getApplications.executor": "Run",
     "JUnit.AssignLeave.addAssignLeave.executor": "Run",
     "JUnit.Candidate.addCandidate.executor": "Run",
@@ -72,6 +81,7 @@
     "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
     "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
     "JUnit.LoginTest.testSuccessfullLogout.executor": "Run",
+    "JUnit.UserTest.sendAUserRequestTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -86,7 +96,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AdminTest.sendAdminRequestTest">
+  <component name="RunManager" selected="JUnit.UserTest.sendAUserRequestTest">
     <configuration name="AdminTest.sendAdminRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -103,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application.getApplStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Application.getApplStatus (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -113,7 +123,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
       <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
-      <option name="METHOD_NAME" value="getApplStatus" />
+      <option name="METHOD_NAME" value="getApplStatus(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application.getApplStatusFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
+      <option name="METHOD_NAME" value="getApplStatusFromList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,56 +161,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testSuccessfullLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.sendAUserRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="org.example.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="METHOD_NAME" value="testSuccessfullLogout" />
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.UserTest" />
+      <option name="METHOD_NAME" value="sendAUserRequestTest" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginPage.LoginUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.LoginPage" />
-      <option name="METHOD_NAME" value="LoginUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AdminTest.sendAdminRequestTest" />
-        <item itemvalue="JUnit.Application.getApplStatus" />
+        <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
         <item itemvalue="JUnit.Application.getApplications" />
-        <item itemvalue="JUnit.LoginTest.testSuccessfullLogout" />
-        <item itemvalue="TestNG.LoginPage.LoginUser" />
+        <item itemvalue="JUnit.Application.getApplStatusFromList" />
+        <item itemvalue="JUnit.Application.getApplStatus (1)" />
+        <item itemvalue="JUnit.AdminTest.sendAdminRequestTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-22-openjdk-22-3183f394aec4-75f08976" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -499,6 +500,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
           <line>129</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
