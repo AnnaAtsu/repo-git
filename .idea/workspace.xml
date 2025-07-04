@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало rest c сериализацией">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/ParallelTests.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало rest c параллельными тестами">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/ProcessRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/RequestProcessTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +77,7 @@
     "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
     "JUnit.LoginTest.testSuccessfullLogout.executor": "Run",
     "JUnit.ParallelTests.executor": "Run",
+    "JUnit.RequestProcessTest.RequestProcessTest.executor": "Run",
     "JUnit.UserTest.executor": "Run",
     "JUnit.UserTest.sendAUserRequestTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -93,7 +94,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ParallelTests">
+  <component name="RunManager" selected="JUnit.RequestProcessTest.RequestProcessTest">
     <configuration name="Application.getApplStatusFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -141,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RequestProcessTest.RequestProcessTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -150,8 +151,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.UserTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.RequestProcessTest" />
+      <option name="METHOD_NAME" value="RequestProcessTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RequestProcessTest.RequestProcessTest" />
+        <item itemvalue="JUnit.Application.getApplications" />
         <item itemvalue="JUnit.ParallelTests" />
         <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
         <item itemvalue="JUnit.Application.getApplStatusFromList" />
-        <item itemvalue="JUnit.Application.getApplications" />
-        <item itemvalue="JUnit.UserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -447,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751620525018</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="начало rest c параллельными тестами">
+      <option name="closed" value="true" />
+      <created>1751621027632</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1751621027632</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="коммит с законченным singleton" />
     <MESSAGE value="коммит с незаконченным Page object / Page factory&#10;                     &#10;                     для описания страниц," />
     <MESSAGE value="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin" />
     <MESSAGE value="коммит с законченным Page element - найти самостоятельно где применить" />
@@ -487,7 +496,8 @@
     <MESSAGE value="начало rest2" />
     <MESSAGE value="начало rest user request" />
     <MESSAGE value="начало rest c сериализацией" />
-    <option name="LAST_COMMIT_MESSAGE" value="начало rest c сериализацией" />
+    <MESSAGE value="начало rest c параллельными тестами" />
+    <option name="LAST_COMMIT_MESSAGE" value="начало rest c параллельными тестами" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,11 +521,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
           <line>129</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
