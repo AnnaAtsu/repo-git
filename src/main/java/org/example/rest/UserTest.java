@@ -27,7 +27,7 @@ public class UserTest {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         request = new UserRequest(
                 faker.options().option("marriage","name_change"),
-                 faker.name().lastName(),
+                faker.name().lastName(),
                 faker.name().firstName(),
                 "+7" + faker.phoneNumber().subscriberNumber(10),
                 faker.number().digits(10), // Номер паспорта
@@ -78,6 +78,7 @@ public class UserTest {
                 .post()
                 .then()
                 .statusCode(200)
+                .log().body()
                 .header("Content-Type", IsEqual.equalTo("application/json; charset=utf-8"))
                 .spec(SpecConfig.responseSpecification());
 
