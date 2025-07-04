@@ -1,8 +1,9 @@
 package org.example.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-public record UserRequest (String mode,
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record UserRequest ( @JsonProperty String mode,
                            @JsonProperty String  personalLastName,
                            @JsonProperty   String personalMiddleName,
                            @JsonProperty  String personalPhoneNumber,
@@ -23,7 +24,8 @@ public record UserRequest (String mode,
                            @JsonProperty   String birth_place,
                            @JsonProperty   String birth_mother,
                            @JsonProperty   String birth_father,
-                           @JsonProperty  String death_dateOfDeath, String death_placeOfDeath)
+                           @JsonProperty  String death_dateOfDeath,
+                            @JsonProperty String death_placeOfDeath)
 
 {
 

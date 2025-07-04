@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 public class AdminTest {
     AdminRequest request;
@@ -35,6 +36,8 @@ public class AdminTest {
                 .when()
                 .post()
                 .then()
+                .statusCode(200)
+                .header("Content-Type", equalTo("application/json; charset=utf-8"))
                 .spec(SpecConfig.responseSpecification());
     }
 
