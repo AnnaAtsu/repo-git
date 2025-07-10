@@ -6,8 +6,8 @@ import java.sql.*;
 
 public class JDBCpostgresql {
     private static final String DBurl = ConfProperties.getProperty("DBurl");
-    private static final String user = ConfProperties.getProperty("user");
-    private static final String password = ConfProperties.getProperty("user_senla");
+   // private static final String user = ConfProperties.getProperty("user");
+   // private static final String password = ConfProperties.getProperty("user_senla");
     private Connection connection;
     /**
      * Устанавливает соединение с базой данных PostgreSQL
@@ -18,7 +18,7 @@ public class JDBCpostgresql {
             Class.forName("org.postgresql.Driver");
 
             // Устанавливаем соединение
-            connection = DriverManager.getConnection(DBurl, user, password);
+            connection = DriverManager.getConnection(DBurl);
 
             System.out.println("Successfully connected to PostgreSQL database");
         } catch (ClassNotFoundException e) {

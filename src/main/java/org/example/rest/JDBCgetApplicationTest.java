@@ -39,7 +39,7 @@ public class JDBCgetApplicationTest {
                         .extract().as(GetApplicationResponse.class);
         assertNotNull(response.getRequestId());
         assertNotNull(response.getData());
-        try (ResultSet result = dbConnector.executeQuery("SELECT * FROM applications WHERE applicationid=" + applicationId))
+        try (ResultSet result = dbConnector.executeQuery("SELECT * FROM applications WHERE applicationid = " + applicationId))
         //"SELECT * FROM users WHERE email = ?", пример
         //            "test@example.com"
         {
