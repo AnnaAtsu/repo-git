@@ -2,19 +2,15 @@ package org.example.rest;
 
 import com.github.javafaker.Faker;
 import org.example.client.SpecConfig;
-import org.example.dto.AdminRequest;
+
 import org.example.dto.UserRequest;
 import org.hamcrest.core.IsEqual;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.testng.Assert;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
-import java.util.Optional;
 
-import static com.google.common.base.Predicates.equalTo;
 import static io.restassured.RestAssured.given;
 
 public class UserTest {
@@ -24,42 +20,36 @@ public class UserTest {
     @BeforeEach
     void setup() {
         Faker faker = new Faker();
-        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         request = new UserRequest(
-                faker.options().option("marriage","name_change"),
-                faker.name().lastName(),
-                faker.name().firstName(),
-                "+7" + faker.phoneNumber().subscriberNumber(10),
-                faker.number().digits(10), // Номер паспорта
-                 // Данные гражданина
-                faker.name().lastName(),
-                faker.name().firstName(),
-                faker.name().firstName(),
-                LocalDate.now()
-                        .minusYears(faker.number().numberBetween(18, 80))
-                        .format(dateFormatter),
-                faker.number().digits(10), // Номер паспорта гражданина
-                faker.options().option("male", "female"),
-                // Дата брака
-                LocalDate.now().format(dateFormatter),
-                faker.funnyName().name(),
-                faker.name().lastName(),
-                // Данные другого человека
-                faker.name().lastName(),
-                faker.name().firstName(),
-                LocalDate.now()
-                        .minusYears(faker.number().numberBetween(18, 80))
-                        .format(dateFormatter),
-                faker.number().digits(10),
-                // Место рождения
-                 faker.address().cityName() + ", " + faker.address().streetAddress(),
-                // Данные родителей
-                faker.name().fullName(), // Мать
-                faker.name().fullName(), // Отец
-                LocalDate.now()
-                        .minusDays(faker.number().numberBetween(1, 365))
-                        .format(dateFormatter),
-                faker.address().cityName() + " больница"
+                "wedding",  // mode
+                faker.name().lastName(),      // personalLastName
+                faker.name().firstName(),     // personalFirstName
+                faker.name().firstName(), // personalMiddleName
+                "12312312123", // personalPhoneNumber
+                "23123123",   // personalNumberOfPassport
+                faker.address().streetAddress(), // personalAddress
+                faker.name().lastName(), // citizenLastName
+                faker.name().firstName(), // citizenFirstName
+                faker.name().firstName(), // citizenMiddleName
+                LocalDate.now().toString(), // citizenBirthDate
+                "1231232",   // citizenNumberOfPassport
+                faker.options().option("male", "female"),      // citizenGender
+                faker.address().streetAddress(), // citizenAddress
+                LocalDate.ofYearDay(2000, 12).toString(), // dateOfMarriage
+                faker.funnyName().name(), // newLastName
+                faker.name().firstName(), // anotherPersonLastName
+                faker.name().firstName(), // anotherPersonFirstName
+                faker.name().firstName(), // anotherPersonMiddleName
+                LocalDate.ofYearDay(2002, 20).toString(), // birth_of_anotoherPerson
+                faker.name().firstName(),  // anotherPersonPassport
+                null,        // birth_place
+                null,        // birth_mother
+                null,        // birth_father
+                null,        // birth_grandpa
+                null,        // birth_grandma
+                null,        // death_dateOfDeath
+                null
         );
 
     }

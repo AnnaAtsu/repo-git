@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало jdbc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,51 +51,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AddUser.addNewUser.executor": "Run",
-    "JUnit.AddUser.addNewUser1.executor": "Debug",
-    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
-    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
-    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
-    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
-    "JUnit.AdminTest.sendAdminRequestTest.executor": "Run",
-    "JUnit.Application.getApplStatus (1).executor": "Run",
-    "JUnit.Application.getApplStatus.executor": "Run",
-    "JUnit.Application.getApplStatusFromList.executor": "Run",
-    "JUnit.Application.getApplications.executor": "Run",
-    "JUnit.AssignLeave.addAssignLeave.executor": "Run",
-    "JUnit.Candidate.addCandidate.executor": "Run",
-    "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
-    "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
-    "JUnit.JDBCgetApplicationTest.getApplicationid.executor": "Run",
-    "JUnit.JobTitle.AddJobTitle.executor": "Run",
-    "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
-    "JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor": "Run",
-    "JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor": "Run",
-    "JUnit.JobTitlteTest.deleteAddedJob.executor": "Run",
-    "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
-    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
-    "JUnit.LoginTest.testSuccessfullLogout.executor": "Run",
-    "JUnit.ParallelTests.executor": "Run",
-    "JUnit.RequestProcessTest.RequestProcessTest.executor": "Run",
-    "JUnit.UserTest.executor": "Run",
-    "JUnit.UserTest.sendAUserRequestTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.LoginFromFile.LoginUserFromFile.executor": "Run",
-    "TestNG.LoginPage.LoginUser.executor": "Run",
-    "TestNG.LoginPage.logout.executor": "Run",
-    "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
-    "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AddUser.addNewUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AddUser.addNewUser1.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AddUser.testCreateRandomUser.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AdminPage.AdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AdminSearchTest.testSuccessfullSearch.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.AdminTest.sendAdminRequestTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application.getApplStatus (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application.getApplStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application.getApplStatusFromList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Application.getApplications.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AssignLeave.addAssignLeave.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Candidate.addCandidate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Dashboard.checkElementsDashboard.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DashboardElementsTest.checkDashboardElements.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JDBCgetApplicationTest.getApplicationid.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitle.AddJobTitle.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitle.DeleteJobTitle.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JobTitlteTest.deleteAddedJob.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testSuccessfulLogin.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoginTest.testSuccessfullLogout.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParallelTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RequestProcessTest.RequestProcessTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserTest.sendAUserRequestTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.LoginFromFile.LoginUserFromFile.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPage.LoginUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPage.logout.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Openbrowser.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.JDBCgetApplicationTest.getApplicationid">
+}</component>
+  <component name="RunManager" selected="JUnit.UserTest.sendAUserRequestTest">
     <configuration name="Application.getApplStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -123,22 +123,6 @@
       <option name="PACKAGE_NAME" value="org.example.rest" />
       <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
       <option name="METHOD_NAME" value="getApplStatusFromList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application.getApplications" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
-      <option name="METHOD_NAME" value="getApplications" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,13 +160,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.sendAUserRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.UserTest" />
+      <option name="METHOD_NAME" value="sendAUserRequestTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.getApplicationid" />
         <item itemvalue="JUnit.Application.getApplStatus" />
         <item itemvalue="JUnit.Application.getApplStatusFromList" />
         <item itemvalue="JUnit.RequestProcessTest.RequestProcessTest" />
-        <item itemvalue="JUnit.Application.getApplications" />
       </list>
     </recent_temporary>
   </component>
