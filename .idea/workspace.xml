@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="начало jdbc">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="доработала rest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dto/UserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/UserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserTest.sendAUserRequestTest">
+  <component name="RunManager" selected="JUnit.JDBCgetApplicationTest.getApplicationid">
     <configuration name="Application.getApplStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -178,8 +177,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.getApplicationid" />
+        <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
         <item itemvalue="JUnit.Application.getApplStatus" />
         <item itemvalue="JUnit.Application.getApplStatusFromList" />
         <item itemvalue="JUnit.RequestProcessTest.RequestProcessTest" />
@@ -474,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751982877668</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="доработала rest">
+      <option name="closed" value="true" />
+      <created>1752154502747</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1752154502747</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -489,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="коммит с законченным Page object / Page factory&#10;                     &#10;                     для описания страниц login и admin" />
     <MESSAGE value="коммит с законченным Page element - найти самостоятельно где применить" />
     <MESSAGE value="добавление jobtitle" />
     <MESSAGE value="добавление jobtitle и deletejobtitle" />
@@ -514,7 +520,8 @@
     <MESSAGE value="начало rest c сериализацией" />
     <MESSAGE value="начало rest c параллельными тестами" />
     <MESSAGE value="начало jdbc" />
-    <option name="LAST_COMMIT_MESSAGE" value="начало jdbc" />
+    <MESSAGE value="доработала rest" />
+    <option name="LAST_COMMIT_MESSAGE" value="доработала rest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
