@@ -24,8 +24,8 @@ public class JDBCgetApplicationTest {
 
 
     @Test
-    public void getApplicationid() throws SQLException {
-        int applicationId = 51590;
+    public void getApplicationidJDBC() throws SQLException {
+        String applicationId = "51590";
         String url = "/getApplStatus/" + applicationId;
         GetApplicationResponse response =
                 given()
@@ -39,7 +39,7 @@ public class JDBCgetApplicationTest {
                         .extract().as(GetApplicationResponse.class);
         assertNotNull(response.getRequestId());
         assertNotNull(response.getData());
-        try (ResultSet result = dbConnector.executeQuery("SELECT * FROM applications WHERE applicationid = " + applicationId))
+        try (ResultSet result = dbConnector.executeQuery("SELECT * FROM reg_office.applications WHERE applicationid = " + applicationId))
         //"SELECT * FROM users WHERE email = ?", пример
         //            "test@example.com"
         {
