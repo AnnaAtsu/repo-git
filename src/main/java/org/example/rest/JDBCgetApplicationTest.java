@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import static io.restassured.RestAssured.given;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JDBCgetApplicationTest {
     private JDBCpostgresql dbConnector;
@@ -39,14 +39,47 @@ public class JDBCgetApplicationTest {
                         .extract().as(GetApplicationResponse.class);
         assertNotNull(response.getRequestId());
         assertNotNull(response.getData());
+        dbConnector.connect();
         try (ResultSet result = dbConnector.executeQuery("SELECT * FROM reg_office.applications WHERE applicationid = " + applicationId))
-        //"SELECT * FROM users WHERE email = ?", пример
-        //            "test@example.com"
-        {
+               {
             Assertions.assertTrue(result.next(), "Application not found in database");
             assertEquals(applicationId, result.getString("applicationid"));
         }
+        dbConnector.disconnect();
     }
+
+    @Test
+    public void checkApplicationById() throws SQLException{
+        String applicationId = "51590";
+        String url = "/getApplStatus/" + applicationId;
+        GetApplicationResponse response =
+                given()
+                        .spec(SpecConfig.requestSpecification())
+                        .basePath(url)
+                        .when()
+                        .get()
+                        .then()
+                        .spec(SpecConfig.responseSpecification())
+                        .statusCode(200)
+                        .extract().as(GetApplicationResponse.class);
+        assertNotNull(response.getRequestId());
+        assertNotNull(response.getData());
+        dbConnector.connect();
+        try (ResultSet result = dbConnector.executeQuery("SELECT * FROM reg_office.applications WHERE applicationid = " + applicationId))
+        {
+
+            Assertions.assertTrue(result.next(), "Application not found in database");
+            assertEquals(applicationId, result.getString("applicationid"));
+            assertEquals("53116", result.getString("citizenid"), "Status is null");
+            assertNotNull(result.getTimestamp("dateofapplication"), "Creation date is null");
+            assertNull(result.getString("from_draft"), "from_draft name is missing");
+
+
+        }
+        dbConnector.disconnect();
+    }
+
+
     @AfterEach
     public void tearDown() {
         // Закрываем соединение с БД

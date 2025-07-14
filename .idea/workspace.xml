@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавила путь для файла из винды">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавила путь для файла из винды - добавила верный путь до бд">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/conf.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,8 @@
     "JUnit.Candidate.addCandidate.executor": "Run",
     "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
     "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.checkApplicationById (1).executor": "Run",
+    "JUnit.JDBCgetApplicationTest.checkApplicationById.executor": "Run",
     "JUnit.JDBCgetApplicationTest.getApplicationid.executor": "Run",
     "JUnit.JDBCgetApplicationTest.getApplicationidJDBC.executor": "Run",
     "JUnit.JobTitle.AddJobTitle.executor": "Run",
@@ -96,8 +97,8 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JDBCgetApplicationTest.getApplicationidJDBC">
-    <configuration name="Application.getApplStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JDBCgetApplicationTest.checkApplicationById (1)">
+    <configuration name="JDBCgetApplicationTest.checkApplicationById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
-      <option name="METHOD_NAME" value="getApplStatus(int)" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCgetApplicationTest" />
+      <option name="METHOD_NAME" value="checkApplicationById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application.getApplStatusFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JDBCgetApplicationTest.checkApplicationById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
-      <option name="METHOD_NAME" value="getApplStatusFromList" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCgetApplicationTest" />
+      <option name="METHOD_NAME" value="checkApplicationById(java.lang.Integer)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCgetApplicationTest.checkApplicationById (1)" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.getApplicationidJDBC" />
+        <item itemvalue="JUnit.JDBCgetApplicationTest.checkApplicationById" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.getApplicationid" />
         <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
-        <item itemvalue="JUnit.Application.getApplStatus" />
-        <item itemvalue="JUnit.Application.getApplStatusFromList" />
       </list>
     </recent_temporary>
   </component>
@@ -491,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752155564842</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="добавила путь для файла из винды - добавила верный путь до бд">
+      <option name="closed" value="true" />
+      <created>1752498822552</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1752498822552</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление jobtitle" />
     <MESSAGE value="добавление jobtitle и deletejobtitle" />
     <MESSAGE value="добавление основ Recruitment -&gt; Add candidate" />
     <MESSAGE value="добавление основ Recruitment -&gt; Add candidate1" />
@@ -531,7 +539,8 @@
     <MESSAGE value="начало jdbc" />
     <MESSAGE value="доработала rest" />
     <MESSAGE value="добавила путь для файла из винды" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавила путь для файла из винды" />
+    <MESSAGE value="добавила путь для файла из винды - добавила верный путь до бд" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила путь для файла из винды - добавила верный путь до бд" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

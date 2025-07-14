@@ -1,14 +1,23 @@
 package org.example.jdbc;
 
 import org.example.ConfProperties;
+import org.junit.platform.commons.logging.LoggerFactory;
 
 import java.sql.*;
+import java.util.logging.Logger;
+
+import static org.example.jdbc.ConnectionJDBC.*;
 
 public class JDBCpostgresql {
     private static final String DBurl = ConfProperties.getProperty("DBurl");
    // private static final String user = ConfProperties.getProperty("user");
    // private static final String password = ConfProperties.getProperty("user_senla");
     private Connection connection;
+    private static Connection con = null;
+    private static Statement stmt = null;
+    private static PreparedStatement pstmt = null;
+    private static ResultSet rs = null;
+
     /**
      * Устанавливает соединение с базой данных PostgreSQL
      */
@@ -81,5 +90,8 @@ public class JDBCpostgresql {
     public Connection getConnection() {
         return connection;
     }
+
+
+
 
 }
