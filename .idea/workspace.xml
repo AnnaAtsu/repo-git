@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавила путь для файла из винды - добавила верный путь до бд">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавила путь для файла из винды - проверки">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCRequestProcessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,8 @@
     "JUnit.Candidate.addCandidate.executor": "Run",
     "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
     "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
+    "JUnit.JDBCRequestProcessTest.getJDBCRequestProcess.executor": "Run",
+    "JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess.executor": "Run",
     "JUnit.JDBCgetApplicationTest.checkApplicationById (1).executor": "Run",
     "JUnit.JDBCgetApplicationTest.checkApplicationById.executor": "Run",
     "JUnit.JDBCgetApplicationTest.getApplicationid.executor": "Run",
@@ -97,7 +99,39 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JDBCgetApplicationTest.checkApplicationById (1)">
+  <component name="RunManager" selected="JUnit.JDBCRequestProcessTest.getJDBCRequestProcess">
+    <configuration name="JDBCRequestProcessTest.getJDBCRequestProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCRequestProcessTest" />
+      <option name="METHOD_NAME" value="getJDBCRequestProcess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCRequestProcessTest.getJDBCRequrstProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCRequestProcessTest" />
+      <option name="METHOD_NAME" value="getJDBCRequrstProcess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JDBCgetApplicationTest.checkApplicationById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -130,22 +164,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCgetApplicationTest.getApplicationid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCgetApplicationTest" />
-      <option name="METHOD_NAME" value="getApplicationid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="JDBCgetApplicationTest.getApplicationidJDBC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -162,29 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.sendAUserRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.UserTest" />
-      <option name="METHOD_NAME" value="sendAUserRequestTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCRequestProcessTest.getJDBCRequestProcess" />
+        <item itemvalue="JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.checkApplicationById (1)" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.getApplicationidJDBC" />
         <item itemvalue="JUnit.JDBCgetApplicationTest.checkApplicationById" />
-        <item itemvalue="JUnit.JDBCgetApplicationTest.getApplicationid" />
-        <item itemvalue="JUnit.UserTest.sendAUserRequestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752498822552</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="добавила путь для файла из винды - проверки">
+      <option name="closed" value="true" />
+      <created>1752504961617</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1752504961617</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление jobtitle и deletejobtitle" />
     <MESSAGE value="добавление основ Recruitment -&gt; Add candidate" />
     <MESSAGE value="добавление основ Recruitment -&gt; Add candidate1" />
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1, без проверки формы" />
@@ -540,7 +549,8 @@
     <MESSAGE value="доработала rest" />
     <MESSAGE value="добавила путь для файла из винды" />
     <MESSAGE value="добавила путь для файла из винды - добавила верный путь до бд" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавила путь для файла из винды - добавила верный путь до бд" />
+    <MESSAGE value="добавила путь для файла из винды - проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила путь для файла из винды - проверки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
