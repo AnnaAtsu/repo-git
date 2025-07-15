@@ -57,8 +57,7 @@ public class JDBCRequestProcessTest {
                 .header("Content-Type", equalTo("application/json; charset=utf-8"))
                 .body("staffid", equalTo(null))
                 .spec(SpecConfig.responseSpecification());
-        dbConnector.connect();
-        try (ResultSet result = dbConnector.executeQuery("SELECT * FROM reg_office.applications WHERE applicationid = " + applicantId))
+             try (ResultSet result = dbConnector.executeQuery("SELECT * FROM reg_office.applications WHERE applicationid = " + applicantId))
         {
 
             Assertions.assertTrue(result.next(), "Application not found in database");
@@ -69,7 +68,6 @@ public class JDBCRequestProcessTest {
 
 
         }
-        dbConnector.disconnect();
 
     }
 
