@@ -4,7 +4,9 @@ import com.github.javafaker.Faker;
 import org.example.client.SpecConfig;
 
 import org.example.dto.UserRequest;
+import org.example.jdbc.JDBCpostgresql;
 import org.hamcrest.core.IsEqual;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +18,7 @@ import static io.restassured.RestAssured.given;
 public class UserTest {
 
     UserRequest request;
+    private JDBCpostgresql dbConnector;
 
     @BeforeEach
     void setup() {
@@ -55,10 +58,8 @@ public class UserTest {
     }
 
 
-
-
     @Test
-    void sendAUserRequestTest() {
+    void sendUserRequestTest() {
 
         given()
                 .spec(SpecConfig.requestSpecification())
@@ -71,7 +72,6 @@ public class UserTest {
                 .log().body()
                 .header("Content-Type", IsEqual.equalTo("application/json; charset=utf-8"))
                 .spec(SpecConfig.responseSpecification());
-
 
     }
 }

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавила JDBCgetAdminRequest">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="закончила JDBCgetAdminRequest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCAdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCAdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,58 +54,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.AddUser.addNewUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddUser.addNewUser1.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AddUser.testCreateRandomUser.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AdminPage.AdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testSuccessfullSearch.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AdminTest.sendAdminRequestTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatus (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatus.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatusFromList.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplications.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AssignLeave.addAssignLeave.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Candidate.addCandidate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Dashboard.checkElementsDashboard.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DashboardElementsTest.checkDashboardElements.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCAdminTest.JDBCgetAdminRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCAdminTest.JDBCgetAdminRequest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCRequestProcessTest.getJDBCRequestProcess.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.checkApplicationById (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.checkApplicationById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.getApplicationid.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.getApplicationidJDBC.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitle.AddJobTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitle.DeleteJobTitle.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitlteTest.deleteAddedJob.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSuccessfullLogout.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParallelTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RequestProcessTest.RequestProcessTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.sendAUserRequestTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.LoginFromFile.LoginUserFromFile.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.LoginUser.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.logout.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Openbrowser.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AddUser.addNewUser.executor": "Run",
+    "JUnit.AddUser.addNewUser1.executor": "Debug",
+    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
+    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.AdminTest.sendAdminRequestTest.executor": "Run",
+    "JUnit.Application.getApplStatus (1).executor": "Run",
+    "JUnit.Application.getApplStatus.executor": "Run",
+    "JUnit.Application.getApplStatusFromList.executor": "Run",
+    "JUnit.Application.getApplications.executor": "Run",
+    "JUnit.AssignLeave.addAssignLeave.executor": "Run",
+    "JUnit.Candidate.addCandidate.executor": "Run",
+    "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
+    "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
+    "JUnit.JDBCAdminTest.JDBCgetAdminRequest.executor": "Run",
+    "JUnit.JDBCAdminTest.JDBCgetAdminRequest1.executor": "Run",
+    "JUnit.JDBCRequestProcessTest.getJDBCRequestProcess.executor": "Run",
+    "JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess.executor": "Run",
+    "JUnit.JDBCUserRequest.JDBCgetUserRequest.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.checkApplicationById (1).executor": "Run",
+    "JUnit.JDBCgetApplicationTest.checkApplicationById.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.getApplicationid.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.getApplicationidJDBC.executor": "Run",
+    "JUnit.JobTitle.AddJobTitle.executor": "Run",
+    "JUnit.JobTitle.DeleteJobTitle.executor": "Debug",
+    "JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor": "Run",
+    "JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor": "Run",
+    "JUnit.JobTitlteTest.deleteAddedJob.executor": "Run",
+    "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
+    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
+    "JUnit.LoginTest.testSuccessfullLogout.executor": "Run",
+    "JUnit.ParallelTests.executor": "Run",
+    "JUnit.RequestProcessTest.RequestProcessTest.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.sendAUserRequestTest.executor": "Run",
+    "JUnit.UserTest.sendJDBCAUserRequestTest.executor": "Run",
+    "JUnit.UserTest.sendUserRequestTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoginFromFile.LoginUserFromFile.executor": "Run",
+    "TestNG.LoginPage.LoginUser.executor": "Run",
+    "TestNG.LoginPage.logout.executor": "Run",
+    "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
+    "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.JDBCAdminTest.JDBCgetAdminRequest1">
+}]]></component>
+  <component name="RunManager" selected="JUnit.JDBCUserRequest.JDBCgetUserRequest">
     <configuration name="JDBCAdminTest.JDBCgetAdminRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -135,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCRequestProcessTest.getJDBCRequestProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JDBCUserRequest.JDBCgetUserRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -144,14 +150,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCRequestProcessTest" />
-      <option name="METHOD_NAME" value="getJDBCRequestProcess" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCUserRequest" />
+      <option name="METHOD_NAME" value="JDBCgetUserRequest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCRequestProcessTest.getJDBCRequrstProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.sendJDBCAUserRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -160,14 +166,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCRequestProcessTest" />
-      <option name="METHOD_NAME" value="getJDBCRequrstProcess" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.UserTest" />
+      <option name="METHOD_NAME" value="sendJDBCAUserRequestTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCgetApplicationTest.checkApplicationById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.sendUserRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -176,8 +182,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCgetApplicationTest" />
-      <option name="METHOD_NAME" value="checkApplicationById" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.UserTest" />
+      <option name="METHOD_NAME" value="sendUserRequestTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCUserRequest.JDBCgetUserRequest" />
+        <item itemvalue="JUnit.UserTest.sendUserRequestTest" />
+        <item itemvalue="JUnit.UserTest.sendJDBCAUserRequestTest" />
         <item itemvalue="JUnit.JDBCAdminTest.JDBCgetAdminRequest1" />
         <item itemvalue="JUnit.JDBCAdminTest.JDBCgetAdminRequest" />
-        <item itemvalue="JUnit.JDBCRequestProcessTest.getJDBCRequestProcess" />
-        <item itemvalue="JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess" />
-        <item itemvalue="JUnit.JDBCgetApplicationTest.checkApplicationById (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -522,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752591533726</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="закончила JDBCgetAdminRequest">
+      <option name="closed" value="true" />
+      <created>1752735163172</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1752735163172</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1, без проверки формы" />
     <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио" />
     <MESSAGE value="добавление основ Assign Leave" />
     <MESSAGE value="добавление основ Assign Leave2" />
@@ -562,7 +575,8 @@
     <MESSAGE value="добавила путь для файла из винды - проверки" />
     <MESSAGE value="добавила getJDBCRequestProcess()" />
     <MESSAGE value="добавила JDBCgetAdminRequest" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавила JDBCgetAdminRequest" />
+    <MESSAGE value="закончила JDBCgetAdminRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="закончила JDBCgetAdminRequest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

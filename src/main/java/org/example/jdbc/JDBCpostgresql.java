@@ -1,17 +1,12 @@
 package org.example.jdbc;
 
 import org.example.ConfProperties;
-import org.junit.platform.commons.logging.LoggerFactory;
 
 import java.sql.*;
-import java.util.logging.Logger;
 
-import static org.example.jdbc.ConnectionJDBC.*;
 
 public class JDBCpostgresql {
     private static final String DBurl = ConfProperties.getProperty("DBurl");
-   // private static final String user = ConfProperties.getProperty("user");
-   // private static final String password = ConfProperties.getProperty("user_senla");
     private Connection connection;
     private static Connection con = null;
     private static Statement stmt = null;
@@ -66,14 +61,7 @@ public class JDBCpostgresql {
         return statement.executeQuery();
     }
 
-    /**
-     * Выполняет SQL команду (UPDATE, INSERT, DELETE)
-     */
-    public int executeUpdate(String sql) throws SQLException {
-        try (Statement statement = connection.createStatement()) {
-            return statement.executeUpdate(sql);
-        }
-    }
+
 
     /**
      * Проверяет соединение с базой данных
