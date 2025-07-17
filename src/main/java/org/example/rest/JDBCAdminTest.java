@@ -25,9 +25,10 @@ public class JDBCAdminTest {
     private String digits9;
     private String digits8;
     private String currentDate;
-
     private JDBCpostgresql dbConnector;
     AdminRequest request;
+
+
     @BeforeEach
     void setup() {
         Faker faker = new Faker();
@@ -39,7 +40,6 @@ public class JDBCAdminTest {
         this.digits8 = faker.number().digits(8);
         this.currentDate = LocalDate.now().toString();
 
-
         this.request = new AdminRequest(
                 firstName,
                 lastName,
@@ -49,6 +49,7 @@ public class JDBCAdminTest {
                 currentDate
         );
     }
+
     @BeforeEach
     public void setUpDB() throws SQLException {
         // Инициализация подключения к БД
@@ -66,7 +67,7 @@ public class JDBCAdminTest {
 
     @Test
     public void JDBCgetAdminRequest() throws SQLException {
-        // String surname1 = "Balistreri";
+
         given()
                 .spec(SpecConfig.requestSpecification())
                 .basePath("/sendAdminRequest")
@@ -82,17 +83,22 @@ public class JDBCAdminTest {
                 "SELECT * FROM reg_office.staff WHERE surname = '" + lastName + "' "))
         {
 
-            Assertions.assertTrue(result.next(), "Admin not found in database");
+            Assertions.assertTrue(result.next(), "Нет данных в результате запроса");
             assertEquals(lastName, result.getString("surname"));
            // assertEquals(firstName, result.getString("name"), "name is null");
             assertNotNull(result.getTimestamp("dateofbirth"), "Creation date is null");
+            assertNotNull(result.getString("passportnumber"), "passportnumber is null");
+            assertNotNull(result.getString("phonenumber"), "phonenumber is null");
+            assertNotNull(result.getString("name"), "name is null");
+            assertNotNull(result.getString("middlename"), "middlename is null");
+            assertNotNull(result.getString("staffid"), "staffid is null");
         }
     }
 
 
         @Test
         public void JDBCgetAdminRequest1() throws SQLException{
-            // String surname1 = "Balistreri";
+
             given()
                     .spec(SpecConfig.requestSpecification())
                     .basePath("/sendAdminRequest")
@@ -104,25 +110,31 @@ public class JDBCAdminTest {
                     .header("Content-Type", equalTo("application/json; charset=utf-8"))
                     .spec(SpecConfig.responseSpecification());
 
-            String sql = "SELECT * FROM reg_office.staff WHERE surname = ? AND name = ?";
-            try (PreparedStatement pstmt = dbConnector.getConnection().prepareStatement(sql)) {
-                pstmt.setString(1, lastName);
-                pstmt.setString(2, firstName);
-                try (ResultSet result = pstmt.executeQuery()) {
-                    Assertions.assertTrue(result.next(), "User not found in database");
-                    assertEquals(lastName, result.getString("surname"));
-                    assertEquals(firstName, result.getString("name"));
+                  try (ResultSet result = dbConnector.executeQuery(
+                    "SELECT * FROM reg_office.staff WHERE surname = ? AND name = ?", lastName, firstName)) {
+
+                while (result.next()) {
+                    // обработка результатов
+                    String surname = result.getString("surname");
+                    String name = result.getString("name");
+                    System.out.println(surname + " " + name);
+
+                    Assertions.assertTrue(result.next(), "Нет данных в результате запроса");
+                    assertAll("Проверка данных админа",
+                            () -> assertEquals(firstName, result.getString("name")),
+                            () -> assertEquals(lastName, result.getString("surname")),
+                            () -> assertNotNull(result.getString("staffid")),
+                            () -> assertNotNull(result.getString("passportnumber")),
+                            () -> assertNotNull(result.getString("phonenumber")),
+                            () -> assertNotNull(result.getString("middlename")),
+                            () -> assertNotNull(result.getTimestamp("dateofbirth"))
+                    );
                 }
+
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-
-
         }
-
-
-
-
-
-
 
 
 }

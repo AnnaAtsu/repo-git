@@ -35,9 +35,7 @@ public class JDBCpostgresql {
         }
     }
 
-    /**
-     * Закрывает соединение с базой данных
-     */
+
     public void disconnect() {
         try {
             if (connection != null && !connection.isClosed()) {
