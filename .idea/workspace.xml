@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="закончила JDBCgetAdminRequest">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="закончила JDBCgetUserRequest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/jdbc/JDBCpostgresql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/AdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCAdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCAdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/JDBCgetApplicationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AdminPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,18 +103,18 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.JDBCUserRequest.JDBCgetUserRequest">
-    <configuration name="JDBCAdminTest.JDBCgetAdminRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdminPage.AdminGotoSystemUsers">
+    <configuration name="AdminPage.AdminGotoSystemUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.rest.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.rest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.rest.JDBCAdminTest" />
-      <option name="METHOD_NAME" value="JDBCgetAdminRequest" />
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.AdminPage" />
+      <option name="METHOD_NAME" value="AdminGotoSystemUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AdminPage.AdminGotoSystemUsers" />
         <item itemvalue="JUnit.JDBCUserRequest.JDBCgetUserRequest" />
         <item itemvalue="JUnit.UserTest.sendUserRequestTest" />
         <item itemvalue="JUnit.UserTest.sendJDBCAUserRequestTest" />
         <item itemvalue="JUnit.JDBCAdminTest.JDBCgetAdminRequest1" />
-        <item itemvalue="JUnit.JDBCAdminTest.JDBCgetAdminRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -536,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752735163172</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="закончила JDBCgetUserRequest">
+      <option name="closed" value="true" />
+      <created>1752736849886</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1752736849886</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -551,7 +554,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление готового Recruitment -&gt; Add candidate1 с проверкой фио" />
     <MESSAGE value="добавление основ Assign Leave" />
     <MESSAGE value="добавление основ Assign Leave2" />
     <MESSAGE value="добавление основ Assign Leave3" />
@@ -576,7 +578,8 @@
     <MESSAGE value="добавила getJDBCRequestProcess()" />
     <MESSAGE value="добавила JDBCgetAdminRequest" />
     <MESSAGE value="закончила JDBCgetAdminRequest" />
-    <option name="LAST_COMMIT_MESSAGE" value="закончила JDBCgetAdminRequest" />
+    <MESSAGE value="закончила JDBCgetUserRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="закончила JDBCgetUserRequest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
