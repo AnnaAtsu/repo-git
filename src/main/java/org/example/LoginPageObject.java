@@ -19,9 +19,9 @@ public class LoginPageObject  {
     @FindBy(tagName = "button")
     WebElement loginButton;
 
-    @FindBy(className = "oxd-userdropdown-icon")
+    @FindBy(xpath = "//i[contains(@class, 'oxd-userdropdown-icon')]")
     WebElement iconLogout;
-    @FindBy(xpath = "\"//a[@href=\\\"/web/index.php/auth/logout\\\" and text()=\\\"Logout\\\"]\"")
+    @FindBy(xpath = "//a[text()='Logout']")
     WebElement logoutButton;
 
     // Конструктор

@@ -10,8 +10,8 @@ public class ConfProperties {
     static {
         try {
             //указание пути до файла с настройками
-          // fileInputStream = new FileInputStream("/home/user/idee/MypetProject/src/main/resources/conf.properties");
-           fileInputStream = new FileInputStream("C:/Users/takan/IdeaProjects/mypetproject/src/main/resources/conf.properties");
+           fileInputStream = new FileInputStream("/home/user/idee/MypetProject/src/main/resources/conf.properties");
+          // fileInputStream = new FileInputStream("C:/Users/takan/IdeaProjects/mypetproject/src/main/resources/conf.properties");
             PROPERTIES = new Properties();
             PROPERTIES.load(fileInputStream);
         } catch (IOException e) {

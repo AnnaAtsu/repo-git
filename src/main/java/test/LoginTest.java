@@ -44,6 +44,7 @@ public class LoginTest {
         AssertJUnit.assertEquals("OrangeHRM", title);
         String adminName = driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
         AssertJUnit.assertEquals(adminName, "Dashboard");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
         loginPage.logOut();
         String loginUrl = driver.getCurrentUrl();
         AssertJUnit.assertEquals(loginUrl, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");

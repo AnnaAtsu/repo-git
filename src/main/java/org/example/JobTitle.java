@@ -41,10 +41,10 @@ public class JobTitle {
                 .perform();
         driver.findElement(By.tagName("button")).submit();
         driver.findElement(By.className("oxd-main-menu-item")).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
          // найти раздел job
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]")).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         // найти ссылку jpb title
         driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/ul/li[1]/a")).click();
         String expectedUrlJobTitle = "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList";
@@ -52,7 +52,7 @@ public class JobTitle {
         AssertJUnit.assertEquals(expectedUrlJobTitle, actualUrlJobTitle);
         //нажать на кнопку Add
         driver.findElement(By.cssSelector("button.oxd-button.oxd-button--medium.oxd-button--secondary")).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+      //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 
         // Создание VO
         JobVO newJob = JobTitleGenerator.generateTitle();
@@ -60,7 +60,7 @@ public class JobTitle {
         driver.findElement(By.xpath("//textarea[@placeholder='Type description here']")).sendKeys(newJob.getJobDescription());
         driver.findElement(By.xpath("//textarea[@placeholder='Add note']")).sendKeys(newJob.getJobNote());
         driver.findElement(By.cssSelector("button.oxd-button.oxd-button--secondary.orangehrm-left-space")).click();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+     //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 
         String xpath = "//div[@class='oxd-table-cell oxd-padding-cell' and @role='cell']//div[text()='" + newJob.getJobTitle() + "']";
         WebElement jobElement = driver.findElement(By.xpath(xpath));
