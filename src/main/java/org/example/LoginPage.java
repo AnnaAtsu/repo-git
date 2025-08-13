@@ -25,7 +25,7 @@ public class LoginPage {
     void LoginUser() {
 
         //чтобы не указывать путь до драйвера напрямую
-       // WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
+       WebDriverManager.chromedriver().setup(); // автоматически скачает и настроит ChromeDriver
         //WebDriver driver = new ChromeDriver();
        //как получить логи
       //  LoggingPreferences logs = new LoggingPreferences();

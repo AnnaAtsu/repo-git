@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавила JDBCgetAdminRequest правка">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправила логаут">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/forinterface/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/forinterface/LoginUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JobTitle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/AdminSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -62,8 +63,10 @@
     "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
     "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
     "JUnit.AdminTest.sendAdminRequestTest.executor": "Run",
+    "JUnit.Application.getAppStatus1.executor": "Run",
     "JUnit.Application.getApplStatus (1).executor": "Run",
     "JUnit.Application.getApplStatus.executor": "Run",
+    "JUnit.Application.getApplStatus2.executor": "Run",
     "JUnit.Application.getApplStatusFromList.executor": "Run",
     "JUnit.Application.getApplications.executor": "Run",
     "JUnit.AssignLeave.addAssignLeave.executor": "Run",
@@ -107,50 +110,34 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.LoginTest.testSuccessfullLogout">
-    <configuration name="DashboardElementsTest.checkDashboardElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Application.getApplStatus2">
+    <configuration name="Application.getAppStatus1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="org.example.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.DashboardElementsTest" />
-      <option name="METHOD_NAME" value="checkDashboardElements" />
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
+      <option name="METHOD_NAME" value="getAppStatus1(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobTitle.AddJobTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Application.getApplStatus2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.JobTitle" />
-      <option name="METHOD_NAME" value="AddJobTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobTitle.DeleteJobTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.JobTitle" />
-      <option name="METHOD_NAME" value="DeleteJobTitle" />
+      <option name="PACKAGE_NAME" value="org.example.rest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.rest.Application" />
+      <option name="METHOD_NAME" value="getApplStatus2(java.lang.Integer)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,13 +175,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Openbrowser.testOpenGooglePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.forinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Openbrowser" />
+      <option name="METHOD_NAME" value="testOpenGooglePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Application.getApplStatus2" />
+        <item itemvalue="JUnit.Application.getAppStatus1" />
+        <item itemvalue="TestNG.Openbrowser.testOpenGooglePage" />
         <item itemvalue="JUnit.LoginTest.testSuccessfullLogout" />
         <item itemvalue="JUnit.LoginTest.testSuccessfulLogin" />
-        <item itemvalue="JUnit.JobTitle.DeleteJobTitle" />
-        <item itemvalue="JUnit.JobTitle.AddJobTitle" />
-        <item itemvalue="JUnit.DashboardElementsTest.checkDashboardElements" />
       </list>
     </recent_temporary>
   </component>
@@ -550,7 +555,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752736849886</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="поправила логаут">
+      <option name="closed" value="true" />
+      <created>1753800337934</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1753800337934</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -565,7 +578,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление основ Assign Leave" />
     <MESSAGE value="добавление основ Assign Leave2" />
     <MESSAGE value="добавление основ Assign Leave3" />
     <MESSAGE value="добавление candidate файла" />
@@ -590,7 +602,8 @@
     <MESSAGE value="добавила JDBCgetAdminRequest" />
     <MESSAGE value="закончила JDBCgetAdminRequest" />
     <MESSAGE value="закончила JDBCgetUserRequest" />
-    <option name="LAST_COMMIT_MESSAGE" value="закончила JDBCgetUserRequest" />
+    <MESSAGE value="поправила логаут" />
+    <option name="LAST_COMMIT_MESSAGE" value="поправила логаут" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -609,6 +622,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/AddUser.java</url>
           <line>129</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
