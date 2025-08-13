@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправила логаут">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/forinterface/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/forinterface/LoginUser.java" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="c интерфейсом с методами с реализацией и без">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Openbrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/rest/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/forinterface/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/forinterface/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/forinterface/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/forinterface/LoginUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +100,7 @@
     "TestNG.LoginPage.LoginUser.executor": "Run",
     "TestNG.LoginPage.logout.executor": "Run",
     "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
+    "TestNG.LoginUser.LoginUserfromInterface.executor": "Run",
     "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -110,7 +108,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Application.getApplStatus2">
+  <component name="RunManager" selected="TestNG.LoginUser.LoginUserfromInterface">
     <configuration name="Application.getAppStatus1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -143,22 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testSuccessfulLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="METHOD_NAME" value="testSuccessfulLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginTest.testSuccessfullLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MypetProject" />
       <extension name="coverage">
@@ -171,6 +153,24 @@
       <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
       <option name="METHOD_NAME" value="testSuccessfullLogout" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginUser.LoginUserfromInterface" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.forinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.forinterface" />
+      <option name="MAIN_CLASS_NAME" value="org.example.forinterface.LoginUser" />
+      <option name="METHOD_NAME" value="LoginUserfromInterface" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginUser.LoginUserfromInterface" />
         <item itemvalue="JUnit.Application.getApplStatus2" />
         <item itemvalue="JUnit.Application.getAppStatus1" />
         <item itemvalue="TestNG.Openbrowser.testOpenGooglePage" />
         <item itemvalue="JUnit.LoginTest.testSuccessfullLogout" />
-        <item itemvalue="JUnit.LoginTest.testSuccessfulLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -563,7 +563,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753800337934</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="c интерфейсом с методами с реализацией и без">
+      <option name="closed" value="true" />
+      <created>1755078912576</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1755078912576</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,7 +586,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление основ Assign Leave2" />
     <MESSAGE value="добавление основ Assign Leave3" />
     <MESSAGE value="добавление candidate файла" />
     <MESSAGE value="добавление  jobTitlePage в формате pageobject" />
@@ -603,7 +610,8 @@
     <MESSAGE value="закончила JDBCgetAdminRequest" />
     <MESSAGE value="закончила JDBCgetUserRequest" />
     <MESSAGE value="поправила логаут" />
-    <option name="LAST_COMMIT_MESSAGE" value="поправила логаут" />
+    <MESSAGE value="c интерфейсом с методами с реализацией и без" />
+    <option name="LAST_COMMIT_MESSAGE" value="c интерфейсом с методами с реализацией и без" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
