@@ -28,6 +28,14 @@ public class TestBase {
         driver = SetUp.getDriver();
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
+    }
+
     @AfterAll
     public static void tearDownAll() {
         SetUp.quitDriver();

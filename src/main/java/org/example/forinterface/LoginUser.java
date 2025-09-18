@@ -25,7 +25,7 @@ public class LoginUser implements Login{
 
     @Test
     void LoginUserfromInterface() {
-       setup();
+    //   setup();
        enterusername();
         enterpassword();
         submitbutton();

@@ -31,7 +31,13 @@
       <version>7.11.0</version>
       <scope>compile</scope>
     </dependency>
-    <!-- rest-assured -->
+    <!-- Для парсинга JSON (RestAssured использует его внутри) -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.17.0</version>
+    </dependency>
+     <!-- rest-assured -->
     <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
@@ -43,6 +49,11 @@
       <artifactId>json-path</artifactId>
       <version>5.5.5</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-path</artifactId>
+      <version>5.4.0</version> <!-- или твоя версия -->
     </dependency>
     <dependency>
       <groupId>io.rest-assured</groupId>
