@@ -45,6 +45,7 @@ public class MassRequestRunner {
     private static final int MAX_RETRIES = 3;
     private static final String CSV_FILE_PATH = "pr71_part_3.csv";
 
+
     public static void main(String[] args) {
         try {
             // 📝 Инициализируем файлы отчётов
