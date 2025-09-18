@@ -23,7 +23,7 @@ import static io.restassured.RestAssured.given;
 public class MassRequestRunner {
 
 
-    // 🔧 Настройки — замени на свои
+
     private static final String BASE_URI = "https://zerno.mcx.gov.ru"; // базовый URL
     private static final String LOGIN_PATH = "/api/auth/login";
     private static final String DATA_PATH = "/api/zsn/send-to-efis";
@@ -41,9 +41,9 @@ public class MassRequestRunner {
     private static PrintWriter errorWriter;
 
     // ⚙️ Конфигурация
-    private static final int THREAD_POOL_SIZE = 10;
+    private static final int THREAD_POOL_SIZE = 30;
     private static final int MAX_RETRIES = 3;
-    private static final String CSV_FILE_PATH = "pr71_part_3.csv";
+    private static final String CSV_FILE_PATH = "pr71_part_4.csv";
 
 
     public static void main(String[] args) {
@@ -55,7 +55,7 @@ public class MassRequestRunner {
                     new FileOutputStream(ERROR_REPORT_FILE, false), StandardCharsets.UTF_8));
 
             successWriter.println("product_monitor_id,timestamp");
-            errorWriter.println("product_monitor_id,error_message,timestamp");
+            errorWriter.println("product_monitor_id");
 
             System.out.println("🚀 Начинаем выполнение массовых запросов...");
 
