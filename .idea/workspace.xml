@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="c методом massrunner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pr71_part_3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pr71_part_3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MassRequestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MassRequestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

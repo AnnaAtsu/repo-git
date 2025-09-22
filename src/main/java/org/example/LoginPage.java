@@ -22,6 +22,7 @@ public class LoginPage {
 
 
     @Test
+
     void LoginUser() {
 
         //чтобы не указывать путь до драйвера напрямую

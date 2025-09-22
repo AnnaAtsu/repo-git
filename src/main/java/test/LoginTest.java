@@ -3,20 +3,28 @@ package test;
 import org.example.LoginPage;
 import org.example.LoginPageObject;
 import org.example.SetUp;
+import org.example.TestBase;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
+import io.qameta.allure.Step;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 
 import java.time.Duration;
 
-public class LoginTest {
+public class LoginTest extends TestBase {
 
 
     WebDriver driver;
     LoginPageObject loginPage;
+
+    public LoginTest(WebDriver driver) {
+        super(driver);
+    }
 
     @BeforeEach
     public void setUp() {
@@ -28,6 +36,7 @@ public class LoginTest {
     }
 
     @Test
+    @Step("Логин с логином Admin и паролем admin123")
     public void testSuccessfulLogin() {
         loginPage.loginAs("Admin", "admin123");
         String title = driver.getTitle();
@@ -38,6 +47,7 @@ public class LoginTest {
 
 
     @Test
+    @Step("Логаут с логином Admin и паролем admin123")
     public void testSuccessfullLogout() {
         loginPage.loginAs("Admin", "admin123");
         String title = driver.getTitle();
@@ -51,6 +61,14 @@ public class LoginTest {
         driver.quit();
     }
 
+
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+        if (result.getStatus() == ITestResult.FAILURE) {
+            captureScreenshotOnFailure();
+        }
+        driver.quit();
+    }
     @AfterAll
     public static void tearDown() {
         SetUp.quitDriver();

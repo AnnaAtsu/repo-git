@@ -1,11 +1,10 @@
 package org.example;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Attachment;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,6 +17,19 @@ public class TestBase {
 
 
     WebDriver driver;
+
+
+    //как сделать скриншоты
+    @Attachment(value = "Скриншот при ошибке", type = "image/png")
+    public byte[] saveScreenshot(byte[] screenshot) {
+        return screenshot;
+    }
+
+    public void captureScreenshotOnFailure() {
+        if (driver != null) {
+            saveScreenshot(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
+        }
+    }
 
     public TestBase(WebDriver driver) {
         this.driver = driver;
