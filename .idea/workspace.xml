@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавлены @Step">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправлен пом файл3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -208,22 +208,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748339881385</updated>
-    </task>
-    <task id="LOCAL-00001" summary="коммит1">
-      <option name="closed" value="true" />
-      <created>1748344832145</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1748344832145</updated>
-    </task>
-    <task id="LOCAL-00002" summary="коммит12">
-      <option name="closed" value="true" />
-      <created>1748355833394</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1748355833394</updated>
     </task>
     <task id="LOCAL-00003" summary="добавила adduser">
       <option name="closed" value="true" />
@@ -593,7 +577,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758543216248</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="поправлен пом файл">
+      <option name="closed" value="true" />
+      <created>1758543796084</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1758543796084</updated>
+    </task>
+    <task id="LOCAL-00050" summary="поправлен пом файл2">
+      <option name="closed" value="true" />
+      <created>1758543956495</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1758543956496</updated>
+    </task>
+    <task id="LOCAL-00051" summary="поправлен пом файл3">
+      <option name="closed" value="true" />
+      <created>1758544068098</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1758544068098</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -608,9 +616,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление  jobTitlePage в формате pageobject" />
-    <MESSAGE value="добавление  jobTitlePage в формате pageobject 3 раза" />
-    <MESSAGE value="добавление  DAshboard" />
     <MESSAGE value="добавление  DAshboard c page object" />
     <MESSAGE value="чтение логина и пароля из файла" />
     <MESSAGE value="чтение логина и пароля из файла1" />
@@ -633,7 +638,10 @@
     <MESSAGE value="c интерфейсом с методами с реализацией и без" />
     <MESSAGE value="c методом massrunner" />
     <MESSAGE value="добавлены @Step" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены @Step" />
+    <MESSAGE value="поправлен пом файл" />
+    <MESSAGE value="поправлен пом файл2" />
+    <MESSAGE value="поправлен пом файл3" />
+    <option name="LAST_COMMIT_MESSAGE" value="поправлен пом файл3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
