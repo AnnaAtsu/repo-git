@@ -50,12 +50,7 @@
       <version>5.5.5</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>json-path</artifactId>
-      <version>5.4.0</version> <!-- или твоя версия -->
-    </dependency>
-    <dependency>
+      <dependency>
       <groupId>io.rest-assured</groupId>
       <artifactId>json-schema-validator</artifactId>
       <version>5.5.5</version>
@@ -116,23 +111,13 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.5</version>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version> <!-- или хотя бы 3.8.0 -->
         <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-          <argLine>
-            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-          </argLine>
+          <source>17</source>   <!-- или 11, в зависимости от вашей JDK -->
+          <target>17</target>   <!-- должно совпадать с source -->
+          <encoding>UTF-8</encoding>
         </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.9.22</version>
-          </dependency>
-        </dependencies>
       </plugin>
     </plugins>
   </build>

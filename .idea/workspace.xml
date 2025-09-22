@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="c методом massrunner">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="добавлены @Step">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/LoginTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -588,7 +585,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758176501127</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="добавлены @Step">
+      <option name="closed" value="true" />
+      <created>1758543216248</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1758543216248</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -603,7 +608,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление candidate файла" />
     <MESSAGE value="добавление  jobTitlePage в формате pageobject" />
     <MESSAGE value="добавление  jobTitlePage в формате pageobject 3 раза" />
     <MESSAGE value="добавление  DAshboard" />
@@ -628,7 +632,8 @@
     <MESSAGE value="поправила логаут" />
     <MESSAGE value="c интерфейсом с методами с реализацией и без" />
     <MESSAGE value="c методом massrunner" />
-    <option name="LAST_COMMIT_MESSAGE" value="c методом massrunner" />
+    <MESSAGE value="добавлены @Step" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены @Step" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
