@@ -40,10 +40,10 @@ public class MassRequestRunner {
     private static PrintWriter successWriter;
     private static PrintWriter errorWriter;
 
-    // ⚙️ Конфигурация
+
     private static final int THREAD_POOL_SIZE = 30;
     private static final int MAX_RETRIES = 3;
-    private static final String CSV_FILE_PATH = "pr71_part_4.csv";
+    private static final String CSV_FILE_PATH = "pr711.csv";
 
 
     public static void main(String[] args) {
@@ -133,7 +133,7 @@ public class MassRequestRunner {
         }
     }
 
-    // 🟢 1. Логин через RestAssured
+    //  Логин через RestAssured
     private static String login() {
         try {
             Response response = given()
@@ -159,7 +159,7 @@ public class MassRequestRunner {
     }
 
 
-    // 🟢 2. Отправка данных с retry
+    //  Отправка данных с retry
     private static void sendDataWithRetry(String token, int productMonitorId, int attempt) throws Exception {
         String body = String.format("""
             {
@@ -183,7 +183,7 @@ public class MassRequestRunner {
         }
     }
 
-    // 📁 3. Чтение ID из CSV
+    //  Чтение ID из CSV
     private static List<Integer> readIdsFromCsv(String filePath) throws IOException {
         Path path = Paths.get(filePath);
         return Files.lines(path)

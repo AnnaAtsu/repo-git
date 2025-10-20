@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправлен пом файл3">
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправлен пом файл4">
+      <change afterPath="$PROJECT_DIR$/error_report.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pr711.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/success_report.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MassRequestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MassRequestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,69 +49,72 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2xfrHMbIMsD6ORtoxOiYRgCcZpP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.MassRequestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddUser.addNewUser.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AddUser.addNewUser1.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AddUser.testCreateRandomUser.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AdminPage.AdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminSearchTest.testSuccessfullSearch.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.AdminTest.sendAdminRequestTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getAppStatus1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatus (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatus.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatus2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplStatusFromList.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Application.getApplications.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AssignLeave.addAssignLeave.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Candidate.addCandidate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Dashboard.checkElementsDashboard.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DashboardElementsTest.checkDashboardElements.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCAdminTest.JDBCgetAdminRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCAdminTest.JDBCgetAdminRequest1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCRequestProcessTest.getJDBCRequestProcess.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCUserRequest.JDBCgetUserRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.checkApplicationById (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.checkApplicationById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.getApplicationid.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JDBCgetApplicationTest.getApplicationidJDBC.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitle.AddJobTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitle.DeleteJobTitle.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JobTitlteTest.deleteAddedJob.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSuccessfulLogin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testSuccessfullLogout.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ParallelTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RequestProcessTest.RequestProcessTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.sendAUserRequestTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.sendJDBCAUserRequestTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UserTest.sendUserRequestTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.LoginFromFile.LoginUserFromFile.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.LoginUser.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.logout.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginPage.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginUser.LoginUserfromInterface.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Openbrowser.testOpenGooglePage.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.MassRequestRunner.executor": "Run",
+    "JUnit.AddUser.addNewUser.executor": "Run",
+    "JUnit.AddUser.addNewUser1.executor": "Debug",
+    "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
+    "JUnit.AdminPage.AdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testAdminGotoSystemUsers.executor": "Run",
+    "JUnit.AdminSearchTest.testSuccessfullSearch.executor": "Debug",
+    "JUnit.AdminTest.sendAdminRequestTest.executor": "Run",
+    "JUnit.Application.getAppStatus1.executor": "Run",
+    "JUnit.Application.getApplStatus (1).executor": "Run",
+    "JUnit.Application.getApplStatus.executor": "Run",
+    "JUnit.Application.getApplStatus2.executor": "Run",
+    "JUnit.Application.getApplStatusFromList.executor": "Run",
+    "JUnit.Application.getApplications.executor": "Run",
+    "JUnit.AssignLeave.addAssignLeave.executor": "Run",
+    "JUnit.Candidate.addCandidate.executor": "Run",
+    "JUnit.Dashboard.checkElementsDashboard.executor": "Run",
+    "JUnit.DashboardElementsTest.checkDashboardElements.executor": "Run",
+    "JUnit.JDBCAdminTest.JDBCgetAdminRequest.executor": "Run",
+    "JUnit.JDBCAdminTest.JDBCgetAdminRequest1.executor": "Run",
+    "JUnit.JDBCRequestProcessTest.getJDBCRequestProcess.executor": "Run",
+    "JUnit.JDBCRequestProcessTest.getJDBCRequrstProcess.executor": "Run",
+    "JUnit.JDBCUserRequest.JDBCgetUserRequest.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.checkApplicationById (1).executor": "Run",
+    "JUnit.JDBCgetApplicationTest.checkApplicationById.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.getApplicationid.executor": "Run",
+    "JUnit.JDBCgetApplicationTest.getApplicationidJDBC.executor": "Run",
+    "JUnit.JobTitle.AddJobTitle.executor": "Run",
+    "JUnit.JobTitle.DeleteJobTitle.executor": "Run",
+    "JUnit.JobTitlteTest.AddJobTitleMultipleTimes.executor": "Run",
+    "JUnit.JobTitlteTest.AddJobTitleRepeatedly.executor": "Run",
+    "JUnit.JobTitlteTest.deleteAddedJob.executor": "Run",
+    "JUnit.LoginPage.testOpenGooglePage.executor": "Run",
+    "JUnit.LoginTest.testSuccessfulLogin.executor": "Run",
+    "JUnit.LoginTest.testSuccessfullLogout.executor": "Run",
+    "JUnit.ParallelTests.executor": "Run",
+    "JUnit.RequestProcessTest.RequestProcessTest.executor": "Run",
+    "JUnit.UserTest.executor": "Run",
+    "JUnit.UserTest.sendAUserRequestTest.executor": "Run",
+    "JUnit.UserTest.sendJDBCAUserRequestTest.executor": "Run",
+    "JUnit.UserTest.sendUserRequestTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.LoginFromFile.LoginUserFromFile.executor": "Run",
+    "TestNG.LoginPage.LoginUser.executor": "Run",
+    "TestNG.LoginPage.logout.executor": "Run",
+    "TestNG.LoginPage.testOpenGooglePage.executor": "Run",
+    "TestNG.LoginUser.LoginUserfromInterface.executor": "Run",
+    "TestNG.Openbrowser.testOpenGooglePage.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.MassRequestRunner">
     <configuration name="MassRequestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.MassRequestRunner" />
@@ -200,6 +207,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-3183f394aec4-75f08976" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -208,14 +222,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748339881385</updated>
-    </task>
-    <task id="LOCAL-00003" summary="добавила adduser">
-      <option name="closed" value="true" />
-      <created>1748938711349</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1748938711349</updated>
     </task>
     <task id="LOCAL-00004" summary="добавила adduser">
       <option name="closed" value="true" />
@@ -601,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758544068098</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="поправлен пом файл4">
+      <option name="closed" value="true" />
+      <created>1758544460694</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1758544460694</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -616,7 +630,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="добавление  DAshboard c page object" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="чтение логина и пароля из файла" />
     <MESSAGE value="чтение логина и пароля из файла1" />
     <MESSAGE value="поправила logout c pageobject" />
@@ -641,7 +655,8 @@
     <MESSAGE value="поправлен пом файл" />
     <MESSAGE value="поправлен пом файл2" />
     <MESSAGE value="поправлен пом файл3" />
-    <option name="LAST_COMMIT_MESSAGE" value="поправлен пом файл3" />
+    <MESSAGE value="поправлен пом файл4" />
+    <option name="LAST_COMMIT_MESSAGE" value="поправлен пом файл4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
