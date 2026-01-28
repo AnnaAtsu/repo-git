@@ -20,18 +20,15 @@ import java.util.stream.Collectors;
 
 import static io.restassured.RestAssured.given;
 
-public class MassRequestRunner {
-
-
-
+public class RequestRunnerWithDelay {
     private static final String BASE_URI = "https://zerno.mcx.gov.ru"; // базовый URL
     private static final String LOGIN_PATH = "/api/auth/login";
     private static final String DATA_PATH = "/api/zsn/send-to-efis";
 
     private static final String LOGIN_BODY = """
         {
-          "login": "Starkova",
-          "password": "fsHxKzFpKr"
+          "login": "Sidorova",
+          "password": "Sidorova2023"
         }
         """;
     private static final String SUCCESS_REPORT_FILE = "success_report.csv";
@@ -40,11 +37,13 @@ public class MassRequestRunner {
     private static PrintWriter successWriter;
     private static PrintWriter errorWriter;
 
-
     private static final int THREAD_POOL_SIZE = 30;
     private static final int MAX_RETRIES = 3;
-    private static final String CSV_FILE_PATH = "product_monitor5.csv";
+    private static final String CSV_FILE_PATH = "product_monitor8.csv";
 
+    //  константы для задержки
+    private static final long MIN_DELAY_MS = 3000; // 3 секунды
+    private static final long MAX_DELAY_MS = 4000; // 4 секунды
 
     public static void main(String[] args) {
         try {
@@ -55,9 +54,10 @@ public class MassRequestRunner {
                     new FileOutputStream(ERROR_REPORT_FILE, false), StandardCharsets.UTF_8));
 
             successWriter.println("product_monitor_id,timestamp");
-            errorWriter.println("product_monitor_id");
+            errorWriter.println("product_monitor_id,error,timestamp");
 
             System.out.println("🚀 Начинаем выполнение массовых запросов...");
+            System.out.println("⏰ Задержка между запросами: 3-4 секунды");
 
             String token = login();
             System.out.println("✅ Токен получен: " + (token.length() > 15 ? token.substring(0, 15) + "..." : token));
@@ -69,24 +69,42 @@ public class MassRequestRunner {
 
             List<CompletableFuture<Void>> futures = productMonitorIds.stream()
                     .map(id -> CompletableFuture.runAsync(() -> {
+                        // ЗАДЕРЖКА ПЕРЕД КАЖДЫМ ЗАПРОСОМ
+                        try {
+                            // Случайная задержка от 3 до 4 секунд
+                            long delay = MIN_DELAY_MS + (long) (Math.random() * (MAX_DELAY_MS - MIN_DELAY_MS));
+                            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+                            System.out.println(timestamp + " ⏳ Задержка " + String.format("%.1f", delay/1000.0) +
+                                    " сек для ID: " + id);
+                            Thread.sleep(delay);
+                        } catch (InterruptedException e) {
+                            Thread.currentThread().interrupt();
+                            System.err.println("❌ Задержка прервана для ID: " + id);
+                            return;
+                        }
+
                         boolean success = false;
                         Exception lastError = null;
                         for (int attempt = 1; attempt <= MAX_RETRIES && !success; attempt++) {
                             try {
                                 sendDataWithRetry(token, id, attempt);
                                 success = true;
-                                System.out.println("✅ Успешно отправлено для ID: " + id + " (попытка " + attempt + ")");
+                                String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+                                System.out.println(timestamp + " ✅ Успешно отправлено для ID: " + id +
+                                        " (попытка " + attempt + ")");
                                 synchronized (successWriter) {
                                     successWriter.printf("%d,%s%n", id, LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
                                     successWriter.flush();
                                 }
                             } catch (Exception e) {
                                 lastError = e;
-                                System.err.println("⚠️ Попытка " + attempt + " не удалась для ID " + id + ": " + e.getMessage());
+                                String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+                                System.err.println(timestamp + " ⚠️ Попытка " + attempt + " не удалась для ID " +
+                                        id + ": " + e.getMessage());
                                 if (attempt < MAX_RETRIES) {
-                                    long delay = (long) Math.pow(2, attempt) * 1000;
+                                    long retryDelay = (long) Math.pow(2, attempt) * 1000;
                                     try {
-                                        Thread.sleep(delay);
+                                        Thread.sleep(retryDelay);
                                     } catch (InterruptedException ie) {
                                         Thread.currentThread().interrupt();
                                         return;
@@ -95,7 +113,8 @@ public class MassRequestRunner {
                             }
                         }
                         if (!success && lastError != null) {
-                            System.err.println("❌ Все попытки исчерпаны для ID " + id);
+                            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+                            System.err.println(timestamp + " ❌ Все попытки исчерпаны для ID " + id);
                             synchronized (errorWriter) {
                                 String errorMsg = lastError.getMessage().replace("\"", "\"\"");
                                 errorWriter.printf("%d,\"%s\",%s%n", id, errorMsg, LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
@@ -103,7 +122,8 @@ public class MassRequestRunner {
                             }
                         }
                     }, executor).exceptionally(throwable -> {
-                        System.err.println("💥 Необработанная ошибка для ID: " + throwable.getMessage());
+                        String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+                        System.err.println(timestamp + " 💥 Необработанная ошибка: " + throwable.getMessage());
                         return null;
                     }))
                     .collect(Collectors.toList());
@@ -116,7 +136,7 @@ public class MassRequestRunner {
             long successCount = Files.lines(Paths.get(SUCCESS_REPORT_FILE)).count() - 1;
             long errorCount = Files.lines(Paths.get(ERROR_REPORT_FILE)).count() - 1;
 
-            System.out.println("\n📊 ОТЧЁТ:");
+            System.out.println("\n" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")) + " 📊 ОТЧЁТ:");
             System.out.println("✅ Успешно: " + successCount);
             System.out.println("❌ Ошибки: " + errorCount);
             System.out.println("📄 Успешные ID: " + SUCCESS_REPORT_FILE);
@@ -128,7 +148,8 @@ public class MassRequestRunner {
             System.out.println("🏁 Все запросы завершены.");
 
         } catch (Exception e) {
-            System.err.println("💥 Критическая ошибка: " + e.getMessage());
+            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+            System.err.println(timestamp + " 💥 Критическая ошибка: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -158,12 +179,13 @@ public class MassRequestRunner {
         }
     }
 
-
     //  Отправка данных с retry
     private static void sendDataWithRetry(String token, int productMonitorId, int attempt) throws Exception {
+        //ОБНОВЛЕННАЯ ЗАПИСЬ
+        // Правильный формат: {"product_monitor_ids": [id]}
         String body = String.format("""
             {
-              "product_monitor_id": %d
+              "product_monitor_ids": [%d]
             }
             """, productMonitorId);
 

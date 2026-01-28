@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="поправлен пом файл4">
-      <change afterPath="$PROJECT_DIR$/error_report.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pr711.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/success_report.csv" afterDir="false" />
+    <list default="true" id="890344ac-763b-4bd8-bae2-eb0759ed8db4" name="Changes" comment="обновила подсказки">
+      <change afterPath="$PROJECT_DIR$/product_monitor3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_monitor4.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_monitor5.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_monitor6.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_monitor7.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_monitor8.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/RequestRunnerWithDelay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_report.csv" beforeDir="false" afterPath="$PROJECT_DIR$/error_report.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pr711.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pr711.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MassRequestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MassRequestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success_report.csv" beforeDir="false" afterPath="$PROJECT_DIR$/success_report.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +66,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.MassRequestRunner.executor": "Run",
+    "Application.RequestRunnerWithDelay.executor": "Run",
     "JUnit.AddUser.addNewUser.executor": "Run",
     "JUnit.AddUser.addNewUser1.executor": "Debug",
     "JUnit.AddUser.testCreateRandomUser.executor": "Debug",
@@ -115,9 +122,22 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MassRequestRunner">
+  <component name="RunManager" selected="Application.RequestRunnerWithDelay">
     <configuration name="MassRequestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.MassRequestRunner" />
+      <module name="MypetProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestRunnerWithDelay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.RequestRunnerWithDelay" />
       <module name="MypetProject" />
       <extension name="coverage">
         <pattern>
@@ -179,31 +199,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Openbrowser.testOpenGooglePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MypetProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.forinterface.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Openbrowser" />
-      <option name="METHOD_NAME" value="testOpenGooglePage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RequestRunnerWithDelay" />
         <item itemvalue="Application.MassRequestRunner" />
         <item itemvalue="TestNG.LoginUser.LoginUserfromInterface" />
         <item itemvalue="JUnit.Application.getApplStatus2" />
         <item itemvalue="JUnit.Application.getAppStatus1" />
-        <item itemvalue="TestNG.Openbrowser.testOpenGooglePage" />
       </list>
     </recent_temporary>
   </component>
@@ -222,14 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748339881385</updated>
-    </task>
-    <task id="LOCAL-00004" summary="добавила adduser">
-      <option name="closed" value="true" />
-      <created>1748938722481</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1748938722481</updated>
     </task>
     <task id="LOCAL-00005" summary="модификация adduser">
       <option name="closed" value="true" />
@@ -615,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758544460694</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="обновила подсказки">
+      <option name="closed" value="true" />
+      <created>1760970806373</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1760970806373</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -631,7 +633,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="чтение логина и пароля из файла" />
     <MESSAGE value="чтение логина и пароля из файла1" />
     <MESSAGE value="поправила logout c pageobject" />
     <MESSAGE value="начало rest1" />
@@ -656,7 +657,8 @@
     <MESSAGE value="поправлен пом файл2" />
     <MESSAGE value="поправлен пом файл3" />
     <MESSAGE value="поправлен пом файл4" />
-    <option name="LAST_COMMIT_MESSAGE" value="поправлен пом файл4" />
+    <MESSAGE value="обновила подсказки" />
+    <option name="LAST_COMMIT_MESSAGE" value="обновила подсказки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
